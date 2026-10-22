@@ -1,0 +1,265 @@
+{
+  "desktop": {
+    "requestedViewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "rounds": [
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "CAN"
+        ],
+        "indicator": "MORTALIDADE INFANTIL",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 1/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "KOR"
+        ],
+        "indicator": "FECUNDIDADE",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 2/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "RUS"
+        ],
+        "indicator": "MIGRAÇÃO LÍQUIDA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 3/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "TUR"
+        ],
+        "indicator": "FECUNDIDADE",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 4/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "ISL"
+        ],
+        "indicator": "IDADE MEDIANA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 5/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "NGA"
+        ],
+        "indicator": "IDADE MEDIANA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 6/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "USA"
+        ],
+        "indicator": "MORTALIDADE INFANTIL",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 7/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "BRA"
+        ],
+        "indicator": "POPULAÇÃO TOTAL",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 8/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "PHL"
+        ],
+        "indicator": "EXPECTATIVA DE VIDA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 9/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI",
+          "HTI"
+        ],
+        "indicator": "POPULAÇÃO TOTAL",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "title": "Rodada 10/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR",
+          "ERI"
+        ],
+        "indicator": "MIGRAÇÃO LÍQUIDA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 11/12 — Demografia UFMG",
+        "values": 0
+      },
+      {
+        "choices": [
+          "NOR"
+        ],
+        "indicator": "EXPECTATIVA DE VIDA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "title": "Rodada 12/12 — Demografia UFMG",
+        "values": 0
+      }
+    ],
+    "finalScore": {
+      "player": 6,
+      "computer": 6
+    }
+  },
+  "mobile": {
+    "requestedViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "rounds": [
+      {
+        "choices": 3,
+        "indicator": "IDADE MEDIANA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "IDADE MEDIANA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "EXPECTATIVA DE VIDA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "MORTALIDADE INFANTIL",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "EXPECTATIVA DE VIDA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "FECUNDIDADE",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "FECUNDIDADE",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "MIGRAÇÃO LÍQUIDA",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "POPULAÇÃO TOTAL",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 3,
+        "indicator": "POPULAÇÃO TOTAL",
+        "objective": "Maior valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 2,
+        "indicator": "MIGRAÇÃO LÍQUIDA",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      },
+      {
+        "choices": 1,
+        "indicator": "MORTALIDADE INFANTIL",
+        "objective": "Menor valor vence",
+        "overflow": false,
+        "values": 0
+      }
+    ],
+    "finalScore": {
+      "player": 4,
+      "computer": 8
+    }
+  },
+  "narrowPhone": {
+    "requestedViewport": {
+      "width": 320,
+      "height": 740
+    },
+    "cssWidthObserved": 291,
+    "deckAfterFirstRound": {
+      "hand": 3,
+      "reserve": 8,
+      "discarded": 1
+    },
+    "pointerAdvanceVerified": true
+  },
+  "errorLogs": []
+}
