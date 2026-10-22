@@ -69,7 +69,7 @@ def extract(source):
         "notes": "2024 values are medium-scenario projections in this revision; historical estimates end in 2023."
     }
     dataset = {"metadata": metadata, "countries": countries}
-    target = ROOT / "data"
+    target = ROOT / "projeto-demografia-ufmg" / "data"
     target.mkdir(parents=True, exist_ok=True)
     (target / "countries.json").write_text(json.dumps(dataset, ensure_ascii=False, indent=2) + "\n")
     (target / "countries.js").write_text("// Generated from countries.json by scripts/import-data.py.\nwindow.DEMOGRAPHY_DATA = " + json.dumps(dataset, ensure_ascii=False, separators=(",", ":")) + ";\n")

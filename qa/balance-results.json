@@ -1,0 +1,122 @@
+{
+  "matchesPerProfile": 5000,
+  "totalMatches": 20000,
+  "totalRounds": 240000,
+  "firstSeed": 120001,
+  "lastSeed": 125000,
+  "computerDifficulty": {
+    "rankWeights": [
+      0.7,
+      0.25,
+      0.05
+    ],
+    "uncertainty": 0.15
+  },
+  "datasetSha256": "3cd1d5ebb4b148e37d9d0b150b15529d4a89cb51c0e3242c9fbf32d7868aa9bb",
+  "results": [
+    {
+      "id": "random",
+      "name": "Sem conhecimento (escolha aleatória)",
+      "matches": 5000,
+      "computerWins": 3940,
+      "playerWins": 427,
+      "draws": 633,
+      "computerPoints": 38860,
+      "playerPoints": 21140,
+      "tiedRounds": 0,
+      "computerWinPercent": 78.8,
+      "playerWinPercent": 8.54,
+      "drawPercent": 12.66,
+      "meanComputerPoints": 7.772,
+      "meanPlayerPoints": 4.228,
+      "computerRoundWinPercent": 64.76666666666667,
+      "uniquePlayerDecks": 5000,
+      "uniqueSchedules": 5000
+    },
+    {
+      "id": "basic",
+      "name": "Conhecimento básico",
+      "settings": {
+        "rankWeights": [
+          0.55,
+          0.3,
+          0.15
+        ],
+        "uncertainty": 0.35
+      },
+      "matches": 5000,
+      "computerWins": 2749,
+      "playerWins": 1144,
+      "draws": 1107,
+      "computerPoints": 33615,
+      "playerPoints": 26385,
+      "tiedRounds": 0,
+      "computerWinPercent": 54.98,
+      "playerWinPercent": 22.88,
+      "drawPercent": 22.14,
+      "meanComputerPoints": 6.723,
+      "meanPlayerPoints": 5.277,
+      "computerRoundWinPercent": 56.025,
+      "uniquePlayerDecks": 5000,
+      "uniqueSchedules": 5000
+    },
+    {
+      "id": "intermediate",
+      "name": "Conhecimento intermediário",
+      "settings": {
+        "rankWeights": [
+          0.7,
+          0.25,
+          0.05
+        ],
+        "uncertainty": 0.15
+      },
+      "matches": 5000,
+      "computerWins": 1849,
+      "playerWins": 1979,
+      "draws": 1172,
+      "computerPoints": 29750,
+      "playerPoints": 30250,
+      "tiedRounds": 0,
+      "computerWinPercent": 36.98,
+      "playerWinPercent": 39.58,
+      "drawPercent": 23.44,
+      "meanComputerPoints": 5.95,
+      "meanPlayerPoints": 6.05,
+      "computerRoundWinPercent": 49.583333333333336,
+      "uniquePlayerDecks": 5000,
+      "uniqueSchedules": 5000
+    },
+    {
+      "id": "advanced",
+      "name": "Conhecimento elevado",
+      "settings": {
+        "rankWeights": [
+          0.9,
+          0.09,
+          0.01
+        ],
+        "uncertainty": 0.06
+      },
+      "matches": 5000,
+      "computerWins": 1089,
+      "playerWins": 2874,
+      "draws": 1037,
+      "computerPoints": 26083,
+      "playerPoints": 33917,
+      "tiedRounds": 0,
+      "computerWinPercent": 21.78,
+      "playerWinPercent": 57.48,
+      "drawPercent": 20.74,
+      "meanComputerPoints": 5.2166,
+      "meanPlayerPoints": 6.7834,
+      "computerRoundWinPercent": 43.471666666666664,
+      "uniquePlayerDecks": 5000,
+      "uniqueSchedules": 5000
+    }
+  ],
+  "estimateAudit": {
+    "hands": 12000,
+    "estimatedBestNotTrueBest": 675
+  }
+}
