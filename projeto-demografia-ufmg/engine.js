@@ -8,7 +8,7 @@
   const games=new WeakMap();
   function refill(hand,reserve) {while(hand.length<3&&reserve.length)hand.push(reserve.shift());}
   function identity(card) {return {id:card.id,name:card.name,flag:card.flag};}
-  function ownCard(state,card) {return Object.freeze(state.mode.visibleValues?{...card}:identity(card));}
+  function ownCard(state,card,visible=state.mode.visibleValues) {return Object.freeze(visible?{...card}:identity(card));}
   function prepareRound(state) {
     if(!state.mode.fullDeckSelection)refill(state.playerHand,state.playerReserve);
     refill(state.computerHand,state.computerReserve);
@@ -17,7 +17,7 @@
       hand:computer.estimateOwnHand(Object.freeze([...state.computerHand]),state.rounds[state.round],state.random,state.difficulty),
       objective:state.rounds[state.round].objective,
     });
-    // Fixed before any player input. Both hidden-value modes use this exact path.
+    // Fixed before any player input. Every mode uses this exact path.
     state.computerChoiceId=computer.chooseComputerCard(information,state.random,state.difficulty);
   }
   function createGame(catalog,{mode:modeId='normal',random=Math.random,difficulty=computer.DEFAULT_DIFFICULTY}={}) {
@@ -41,7 +41,7 @@
       mode:state.mode,round:state.round,rule:state.rounds[state.round]??null,
       playerHand:Object.freeze(state.round<12?state.playerHand.map(card=>ownCard(state,card)):[]),
       roundHand:Object.freeze(state.round<12?state.roundHand.map(card=>ownCard(state,card)):[]),
-      playerDeck:Object.freeze(state.playerDeck.map(card=>Object.freeze({...ownCard(state,card),status:active.has(card.id)?'hand':waiting.has(card.id)?'reserve':'discarded'}))),
+      playerDeck:Object.freeze(state.playerDeck.map(card=>Object.freeze({...ownCard(state,card,state.mode.fullDeckSelection),status:active.has(card.id)?'hand':waiting.has(card.id)?'reserve':'discarded'}))),
       playerReserveCount:state.playerReserve.length,computerHandCount:state.computerHand.length,computerReserveCount:state.computerReserve.length,
       selectedCardId:state.selectedCardId,revealed:state.revealed,playerScore:state.playerScore,computerScore:state.computerScore,ties:state.ties,
       result:state.result,history:Object.freeze([...state.history]),finished:state.round===12,
