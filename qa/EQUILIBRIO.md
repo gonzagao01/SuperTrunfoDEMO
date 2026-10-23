@@ -16,9 +16,9 @@ Foram executadas **60.000 partidas completas / 720.000 rodadas**, 5.000 partidas
 | Jogador simulado | Computador vence | Jogador vence | Empate | Pontos médios computador / jogador |
 | --- | ---: | ---: | ---: | ---: |
 | Escolha aleatória | 79,74% | 8,54% | 11,72% | 7,830 / 4,168 |
-| Conhecimento básico | 57,64% | 21,94% | 20,42% | 6,813 / 5,185 |
-| Conhecimento intermediário | 38,66% | 38,76% | 22,58% | 6,001 / 5,997 |
-| Conhecimento elevado | 23,28% | 56,26% | 20,46% | 5,245 / 6,753 |
+| Conhecimento básico | 56,10% | 23,44% | 20,46% | 6,733 / 5,266 |
+| Conhecimento intermediário | 39,02% | 38,54% | 22,44% | 5,995 / 6,004 |
+| Conhecimento elevado | 17,44% | 64,24% | 18,32% | 4,910 / 7,089 |
 
 ## Difícil
 
@@ -38,9 +38,9 @@ As taxas são de partidas; empates ficam separados. Não houve ajuste para aprox
 - Intermediário: pesos 70/25/5; incerteza-base 0,15 quando há valores ocultos.
 - Elevado: pesos 90/9/1; incerteza-base 0,06 quando há valores ocultos.
 
-No Fácil os valores são visíveis de fato. Básico e intermediário ordenam os valores atuais e sorteiam entre as três primeiras alternativas com seus pesos, para representar erros de leitura/decisão. O perfil elevado escolhe o melhor valor atual entre todas as cartas restantes, sem prever adversário ou rodadas futuras. Isso explica a vantagem educacional desse modo; não equivale a uma estratégia global ótima.
+No Fácil e no Normal os valores são visíveis de fato. Básico e intermediário ordenam os valores atuais e sorteiam entre as três primeiras alternativas com seus pesos, para representar erros de leitura/decisão. O perfil elevado escolhe o melhor valor atual entre as cartas legalmente disponíveis (todas as restantes no Fácil; a mão no Normal), sem prever adversário ou rodadas futuras. Isso explica a vantagem educacional desse modo; não equivale a uma estratégia global ótima.
 
-No Normal e no Difícil, um modelo de memória resolve apenas os IDs da própria mão ativa. Para representar a menor familiaridade, a incerteza-base é multiplicada por 1 + 0,8 × fração de países da mão fora da lista Fácil. Essa hipótese é explícita, igual nos dois modos e usada SOMENTE nos jogadores simulados. O robô não recebe essa alteração. Não é uma medição do conhecimento real do público.
+Somente no Difícil, um modelo de memória resolve apenas os IDs da própria mão ativa. Para representar a menor familiaridade, a incerteza-base é multiplicada por 1 + 0,8 × fração de países da mão fora da lista Fácil. Essa hipótese é explícita e usada SOMENTE nos jogadores simulados do Difícil. No Normal, a leitura dos valores substitui a memória de números ocultos. O robô não recebe essa alteração. Não é uma medição do conhecimento real do público.
 
 Nenhum perfil consulta IDs ou valores adversários, escolha prévia do robô, reserva ou regras futuras. Os resultados comparam modelos; não estimam probabilidades de vitória de pessoas reais. A variedade mundial não garante uma taxa de derrota maior para todos os modelos: extremos demográficos e o baralho sorteado também influenciam as disputas.
 

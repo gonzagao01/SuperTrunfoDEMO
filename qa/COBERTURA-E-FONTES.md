@@ -22,7 +22,7 @@ Os observadores **Santa Sé (Vaticano), VAT**, e **Estado da Palestina, PSE**, t
 | netMigration | CNMR | Saldo migratório anual por 1.000 habitantes | Preservados valores positivos, negativos e zeros oficiais |
 | medianAge | MedianAgePop | Anos, em 1º de julho | Precisão oficial preservada |
 
-A comparação usa os valores originais, sem arredondamento. Os valores comparados mostram até seis casas para evitar aparentes empates causados pela apresentação; os outros indicadores têm duas casas. Zero só é aceito quando consta da fonte. O importador rejeita ausências, valores não finitos e intervalos incompatíveis. Há um único catálogo de execução, exportado em JSON, JavaScript e CSV, cujas representações são verificadas quanto à igualdade.
+A comparação usa os valores originais, sem arredondamento. Taxas e idades são apresentadas com até seis casas decimais, conforme a precisão da fonte, no catálogo e nos detalhes das cartas. A população é inteira. Isso evita aparentes empates causados por arredondamento excessivo. Zero só é aceito quando consta da fonte. O importador rejeita ausências, valores não finitos e intervalos incompatíveis. Há um único catálogo de execução, exportado em JSON, JavaScript e CSV, cujas representações são verificadas quanto à igualdade.
 
 ## Auditoria e reprodução
 

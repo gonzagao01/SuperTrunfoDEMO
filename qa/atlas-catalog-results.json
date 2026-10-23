@@ -1,0 +1,46 @@
+{
+  "countries": 195,
+  "validatedValues": 1170,
+  "regionUi": [
+    {
+      "code": "002",
+      "count": 54
+    },
+    {
+      "code": "019",
+      "count": 35
+    },
+    {
+      "code": "142",
+      "count": 48
+    },
+    {
+      "code": "150",
+      "count": 44
+    },
+    {
+      "code": "009",
+      "count": 14
+    }
+  ],
+  "accentInsensitiveSearch": true,
+  "combinedEmptyFilter": true,
+  "nestedIndicatorDialog": true,
+  "sixCountryValues": true,
+  "togoFertility": "4,121673",
+  "neutralComparison": true,
+  "navigation": [
+    "Jogar",
+    "Baralho",
+    "Sobre o projeto",
+    "Como jogar"
+  ],
+  "tutorialSteps": 3,
+  "tutorialVisibleExampleValues": 3,
+  "normalVisible": true,
+  "hardHidden": true,
+  "easyTwoColumnMobileGrid": true,
+  "explicitEndBeforeCatalogue": true,
+  "mobileComparisonLargePopulations": true,
+  "browserErrors": []
+}

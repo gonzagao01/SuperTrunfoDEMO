@@ -1,12 +1,13 @@
 {
   "baseMainCommit": "4693621d19b8015ad8f0a458934084ca51e6f97d",
+  "reviewBaseCommit": "c3305c318ddf8dcee6658df79f9165a840d8c2a0",
   "branch": "atualizacao/tres-modos-mundial",
   "publishedFiles": [
     {
       "path": "projeto-demografia-ufmg/app.js",
-      "bytes": 23281,
-      "sha256": "d471b3396c8204745b6cb14511cf16ffd49ae9bad28ae08b9069af42a2a03d22",
-      "gitBlobSha": "46696f8ec52bff516e324dd4f871cc726916b36d"
+      "bytes": 33853,
+      "sha256": "ae42d6dedb745dcfba0a16ed82250a2630aa9e133d4b0c07f300611bc5c86d54",
+      "gitBlobSha": "f538645765ec96f1ccde5009e4164ae4c0c847c2"
     },
     {
       "path": "projeto-demografia-ufmg/assets/favicon.svg",
@@ -1185,6 +1186,12 @@
       "gitBlobSha": "92f8e2573cc8ed629542fc57577c29da0bf4ad4e"
     },
     {
+      "path": "projeto-demografia-ufmg/atlas.js",
+      "bytes": 656,
+      "sha256": "25cd77040a0821f2df3084a47277d47a01d8de8655584bfdd956c962f2049029",
+      "gitBlobSha": "c59596fb3e99b70299ab7a2114df161dc09ee7f8"
+    },
+    {
       "path": "projeto-demografia-ufmg/computer.js",
       "bytes": 4201,
       "sha256": "6b007c92fae07f9d4b0f39c847c4a7382876f2c8f00c4d23c960c046af8ed948",
@@ -1209,6 +1216,18 @@
       "gitBlobSha": "3f677aa31e3eea416a40ec2f3255f09ade1a02df"
     },
     {
+      "path": "projeto-demografia-ufmg/data/geography.js",
+      "bytes": 2722,
+      "sha256": "99a81bbfe2faf35228f6f351bff55c7193bb0007c151d88a8e2829c61f8b5b55",
+      "gitBlobSha": "b058961580aad4d3c4b8c49612d8b2d4586ace3d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/data/geography.json",
+      "bytes": 3853,
+      "sha256": "9be8af26b0280fb0c5114005db280e1e4a447297d48d69a8daaae36838f792f3",
+      "gitBlobSha": "dbe1c5cbf5a84ae23968b8b1ce4907ae44ba2894"
+    },
+    {
       "path": "projeto-demografia-ufmg/difficulty.js",
       "bytes": 417,
       "sha256": "4076d36a5c47010488b4f6de90fb1ee7391551790fceba43448d5b166f6e39f9",
@@ -1216,27 +1235,27 @@
     },
     {
       "path": "projeto-demografia-ufmg/engine.js",
-      "bytes": 5264,
-      "sha256": "a9072b93daa70f39e911d26f1b1e9935a83fd170d138ced4caa2a93132e4be2c",
-      "gitBlobSha": "ac588dba5711cae037ce8decd872c85641c2de08"
+      "bytes": 5297,
+      "sha256": "c02fdf4d36320a22d94482dd6d19f3da28695916e69fa6a845936f95eda7fa91",
+      "gitBlobSha": "79d39518f1dbbab6845cfab179229b3dd12ff554"
     },
     {
       "path": "projeto-demografia-ufmg/index.html",
-      "bytes": 1180,
-      "sha256": "65c1ee6d78145c8fc330ac55abcb38fa5fe08895cd4d2782a5a8c89053666003",
-      "gitBlobSha": "86b3376b27614cf9e18f8b7709778d2fa7377a27"
+      "bytes": 1323,
+      "sha256": "61a80f590c0bac13ea6bd048b950e682c65d796d3f1b6d4f1611bdd4c21ec8ab",
+      "gitBlobSha": "eae2ad0d28025c5455ec9d5fa090952114ac6605"
     },
     {
       "path": "projeto-demografia-ufmg/indicators.js",
-      "bytes": 1831,
-      "sha256": "c8dd1bec8d9c89fea9916ff7d12b1c03178949d558f85f16dc56cb71c5184de6",
-      "gitBlobSha": "b103d7d92517e97869d57362eb210afd84ea4075"
+      "bytes": 4935,
+      "sha256": "97744b94888fca9de2f5379ae5fdf401d13f105eeccf5f0f58a7b8b81b3dc356",
+      "gitBlobSha": "2a888f28b9154d283691010f620cd0f68d6f38e6"
     },
     {
       "path": "projeto-demografia-ufmg/modes.js",
-      "bytes": 1866,
-      "sha256": "e0477bbf6b31d089d55e9348008189585c28bbbb28505c58dfb0db8db4f36bec",
-      "gitBlobSha": "867f7c46a8fb1658c27ab356a03bd4684d6a99f1"
+      "bytes": 1864,
+      "sha256": "616ace23e70e36005640bb64116b7d4e987d9e33292a9c3e7dc3e2d1c622e317",
+      "gitBlobSha": "8e74276bdbb9106e61dc3bab7dee55a09177f5d5"
     },
     {
       "path": "projeto-demografia-ufmg/rules.js",
@@ -1252,9 +1271,9 @@
     },
     {
       "path": "projeto-demografia-ufmg/styles.css",
-      "bytes": 17778,
-      "sha256": "009d5ccb1a287f6a3eac212994d57c9b18a8c3e33c72e9d1cff1aa9099524576",
-      "gitBlobSha": "12f80c9c4b51371f1bc6394926204b122019890f"
+      "bytes": 24996,
+      "sha256": "9b1db46a269898e750a1c628908f7a58a97a7e90838cf9ae0a9497a2537dca38",
+      "gitBlobSha": "ccef89f4da26902a6edd3fab6168fbee2980da38"
     }
   ]
 }

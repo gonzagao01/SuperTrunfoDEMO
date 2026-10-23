@@ -1,51 +1,57 @@
-# Validação da atualização dos três modos
+# Validação — Baralho e melhorias didáticas
 
-Revisão de 23/10/2026, para aprovação na branch `atualizacao/tres-modos-mundial`. A base é a `main` no commit `4693621d19b8015ad8f0a458934084ca51e6f97d`, após a integração da atualização anterior pelo responsável. Nenhuma integração ou publicação foi realizada nesta revisão.
+Revisão do PR #2 na branch existente `atualizacao/tres-modos-mundial`, sem integração à main ou publicação no GitHub Pages. Base desta etapa: `c3305c318ddf8dcee6658df79f9165a840d8c2a0`; main preservada em `4693621d19b8015ad8f0a458934084ca51e6f97d`.
 
-## Dados
+## Dados e regressão
 
-- 195 países únicos: 193 membros da ONU e dois observadores; seis campos finitos por país, 1.170 valores.
-- Os 36 países anteriores e seus 216 valores, nomes e bandeiras foram preservados. Atualização oficial intermediária aplicada a Togo, com todos os seis valores da mesma linha de 2024.
-- Paridade JSON / JavaScript / CSV; comparação dos 1.170 campos com as linhas oficiais arquivadas para auditoria; população convertida exatamente de milhares para habitantes.
-- 195 bandeiras SVG locais, códigos ISO2 e arquivos seguros verificados. Nenhum campo ausente foi preenchido com zero.
-- Relatório completo e listas definitivas: `COBERTURA-E-FONTES.md` e `PAISES-POR-MODO.md`.
+- Dataset canônico e seus arquivos JSON/JS/CSV byte a byte iguais aos da revisão anterior; SHA-256 do JSON `6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5`.
+- Mantidos 195 países, 1.170 valores e 195 bandeiras locais; comparação com as linhas WPP auditadas e com os 36 países anteriores continua passando.
+- Códigos/regiões M49 acrescentados em arquivo separado: África 54, Américas 35, Ásia 48, Europa 44, Oceania 14. Cobertura dos 195 ISO3 e igualdade entre metadados JSON e JS verificadas.
+- Estratégia, configuração, regras e distribuição permaneceram byte a byte iguais. Regressão de 1.000 mãos contra o snapshot anterior da IA: mesmas estimativas e mesmas decisões para entradas/sementes iguais.
 
-## Regras e privacidade automatizadas
+## Testes automatizados
 
-`node scripts/test.mjs` passou:
+`node scripts/test.mjs` passou, incluindo:
 
-- 200 partidas completas por modo, 600 no total; 24 países distintos, 12 por lado, 12 rodadas e todas as combinações indicador/objetivo exatamente uma vez.
-- Fácil: todas as 12 cartas próprias disponíveis no início, seis números visíveis; qualquer carta restante pode ser escolhida e a utilizada é descartada.
-- Normal: banco 60, seis conhecidos e seis menos conhecidos para cada participante. Escolha legal entre até três cartas, com reposição da reserva.
-- Difícil: sorteio sem grupos a partir de todo o banco mundial. Nas 200 partidas, os 195 países apareceram no conjunto dos sorteios.
-- Identidade, nome e bandeira são os únicos campos das cartas próprias ainda ocultas no Normal e Difícil. Baralho próprio inclui estados; nenhuma reserva pode ser jogada nesses modos.
-- 120 pares de partidas, 240 jogos adicionais, alteraram escolhas e apenas os valores do jogador, sem mudar a sequência de cartas selecionadas pelo robô. Nenhum sorteio ou reconsideração ocorre entre seleção do jogador e revelação.
-- 1.000 mãos comparadas contra um snapshot do algoritmo anterior: estimativas e decisões idênticas para as mesmas entradas e sementes. Normal e Difícil passam pela mesma função, com pesos 70/25/5 e incerteza 0,15. Configurações da partida são copiadas e congeladas.
-- Entradas protegidas verificam que a avaliação lê apenas IDs e o indicador atual da própria mão; a decisão recebe somente IDs, estimativas e o objetivo. Dados adversários e valores crus são rejeitados na função de decisão.
-- 30.000 escolhas de teste: 21.014 primeiras estimativas, 7.460 segundas e 1.526 terceiras (70,05% / 24,87% / 5,09%). Verificadas também mãos finais de duas e uma carta.
-- Empates para todos os indicadores e ambos os objetivos em cada modo, sem pontos; migração negativa comparada com sinal correto; diferenças pequenas não são arredondadas antes da comparação.
-- Os templates reais de `app.js` foram exercitados em mais 36 rodadas empatadas com fixture de teste: MAIOR e MENOR, nenhum número vencedor verde, dois detalhes de indicadores, placar zero e resultado empatado. Esse teste usa um DOM mínimo em Node, separadamente da verificação visual no navegador. O catálogo publicado nunca recebe esse fixture.
+- 600 partidas completas: 200 por modo, com 12 rodadas, cada indicador/objetivo exatamente uma vez, 24 países distintos, 12 cartas por lado, descarte, reposição, empates e resultado final.
+- Fácil: 12 cartas iniciais e qualquer restante selecionável; Normal: até três cartas com valores acessíveis; Difícil: identidades sem números antes da revelação. Reserva permanece não jogável e sem números na visão do Normal/Difícil.
+- Normal mantém exatamente seis conhecidos e seis menos conhecidos em cada baralho. O Difícil continua utilizando o banco mundial sem filtro de familiaridade.
+- 120 pares de partidas (240 jogos adicionais) alteraram escolhas e valores do jogador sem mudar a sequência de decisões do computador. Nenhum novo sorteio ou avaliação entre escolha do jogador e revelação.
+- 30.000 escolhas ponderadas, incerteza real em valores próximos, configurações congeladas, entradas protegidas e mão final de duas/uma carta.
+- Empates em todos os indicadores e ambos os objetivos, inclusive em 36 rodadas dos templates reais: nenhum vencedor verde, zero pontos e resultado empatado.
+- Renderização das 195 cartas de estudo e conferência dos 1.170 valores contra o catálogo canônico; ano, projeção e seis indicadores presentes.
+- Busca sem acentos/maiúsculas, palavras combinadas, filtros geográficos, interseção vazia e entrada de pesquisa sem execução de conteúdo.
+- Comparações Brasil/Japão, Vaticano/Índia, Togo/Turquia e Brasil/Brasil, sem vencedores ou pontos; seis definições; fechamento correto de diálogo sobreposto; bloqueio do catálogo durante partida sem confirmação de encerramento.
+
+Os testes de templates usam um DOM mínimo em Node, de forma complementar à validação real no navegador. O fixture de empate nunca entra nos arquivos de dados publicados.
 
 ## Navegador: computador e celular
 
-Foram jogadas **seis partidas completas / 72 rodadas**, uma por modo em cada tamanho, registradas em `ui-results.json`:
+Seis novas partidas completas / **72 rodadas** — uma por modo em cada tamanho — foram registradas em `ui-results.json`. Foram solicitados viewports de 1366 × 900, 390 × 844 e 320 × 720; a largura útil foi medida no DOM, incluindo um cenário de cerca de 277 px devido à escala e à barra de rolagem do navegador.
 
-- Computador: viewport solicitado 1366 × 900; área útil variou de 1351 a 1366 px com a barra de rolagem.
-- Celular: viewport solicitado 390 × 844; a largura útil foi conferida no DOM em cada rodada. Teste adicional de cliques, objetivo, revelação e tutorial com 320 × 720.
-- Antes da confirmação: botão desabilitado sem escolha; no Fácil, seis campos por carta legal; Normal/Difícil sem valores numéricos de indicadores no HTML das cartas. Reserva apenas consultável.
-- Depois da confirmação: dois números grandes, verde somente no vencedor real conforme MAIOR/MENOR, texto explicativo coerente, placar atualizado e seis indicadores acessíveis em detalhes.
-- Em cada partida: 12 combinações únicas, seis MAIOR e seis MENOR; 24 países sem repetição; 12 resultados e tela final alcançada. Nenhuma rolagem horizontal na área útil verificada.
-- Tutorial completado na primeira abertura, reaberto em Como jogar e testado por teclado e por cliques; seleção de dificuldade, baralho próprio e retorno ao menu também verificados.
-- Console do navegador sem erros ou avisos. As bandeiras das partidas carregaram; uma checagem inicial de imagem feita antes do fim do carregamento foi repetida e confirmou o SVG, sem falha no arquivo.
-- Navegação por teclado exercitou seleção, confirmação, expansão dos seis indicadores e avanço. Foco visível, controles nativos de rádio e diálogo, nomes acessíveis e regiões de resultado presentes.
-- Animação de revelação de 400 ms. A folha de estilo contém a alternativa `prefers-reduced-motion: reduce`, que desativa animações, transições e rolagem animada; a preferência do sistema do usuário não foi modificada para o teste. Contraste preservado na paleta aprovada, com o vencedor em verde claro sobre cinza escuro.
+Verificado em todas as rodadas: número e indicador corretos, seis objetivos MAIOR e seis MENOR, seleção habilitada entre cartas legais, valores atuais iguais aos do catálogo nos modos visíveis, ausência de números nas cartas ocultas do Difícil, descarte sem repetição, pontuação, vencedor verde conforme a regra, seis indicadores após a revelação, botão de avanço e resultado após 12 rodadas.
 
-São testes de navegador com viewport de celular, não testes em um aparelho físico ou garantia de compatibilidade com todo navegador móvel. As evidências JPEG acompanham os relatórios nesta pasta. `celular-320-revelacao.jpg` mostra a comparação completa com objetivo MENOR, incluindo vitória do computador.
+Verificado ainda:
 
-## Simulações
+- Fácil móvel com 12 cartas em duas colunas; um número focal por carta; expansão dos outros cinco sem selecionar a carta; usadas retiradas da seleção.
+- Normal com três números focais antes da escolha e cinco indicadores expansíveis por carta; reserva não jogável.
+- Meu baralho com 12 países, três na mão e nove na reserva ao iniciar Normal/Difícil, sem números da reserva ou controles para jogá-la.
+- Menu de saída informa que encerra a partida e não salva o progresso. Continuar preserva o jogo; Encerrar e abrir Baralho entra no catálogo somente após encerrar.
+- Navegação Jogar / Baralho / Sobre o projeto; tutorial reaberto em Como jogar, com três passos e três valores reais no exemplo de escolha, ajuda do indicador e retorno correto.
+- Pesquisa `japao`, pesquisa com acento, filtro combinado sem resultado, limpeza e contagem dos cinco grupos geográficos no navegador.
+- Carta detalhada com seis valores, incluindo fecundidade de Togo `4,121673`; explicação sobreposta sem fechar a carta.
+- Comparação de grandes populações Índia/China com os valores completos lado a lado no celular; sem rolagem horizontal e sem verde de vencedor.
+- Uso por cliques e teclado, controles de formulário nativos, foco visível e diálogos com nomes acessíveis. Preservada a animação de 400 ms e a alternativa CSS para movimento reduzido; a preferência do sistema do usuário não foi alterada para o teste.
+- Console final sem erros ou avisos da aplicação. A prévia precisou ser restabelecida uma vez durante o trabalho; não houve alteração dos dados por isso.
 
-`node scripts/simulate-balance.mjs` passou: **60.000 partidas / 720.000 rodadas**, com 5.000 por modo e perfil. Todos os baralhos e sequências de cada combinação foram distintos e válidos. As hipóteses, taxas de vitória, empates e pontos médios estão em `EQUILIBRIO.md` e `balance-results.json`. Não foi feita calibração para buscar 50%; modelos de conhecimento não substituem testes com pessoas.
+Evidências atuais: imagens `atlas-*` nesta pasta e `atlas-catalog-results.json`. Os testes móveis são de viewport e não de aparelho físico.
 
-## Publicação e arquitetura
+## Equilíbrio repetido
 
-O projeto continua estático, com configuração de modos, regras, distribuição e robô separados, um único catálogo e assets locais. O workflow de publicação e a pasta pública foram preservados. Testes, snapshots e relatórios ficam fora de `projeto-demografia-ufmg/`. A revisão deve ser integrada à `main` apenas após aprovação explícita; depois disso, a validação da publicação deverá usar o mesmo endereço já existente.
+`node scripts/simulate-balance.mjs` passou: **60.000 partidas / 720.000 rodadas**, 5.000 por modo/perfil. Fácil e Difícil reproduzem exatamente os resultados da revisão anterior com as mesmas sementes. No Normal os modelos passam a usar leitura dos valores disponíveis; o perfil que escolhe o melhor valor atual venceu 64,24% das partidas, contra 56,26% no modelo anterior com conhecimento impreciso. Isso compara modelos, não prevê o desempenho de pessoas reais. Não houve ajuste do robô para buscar 50%.
+
+Taxas completas, empates, pontos médios e hipóteses estão em `EQUILIBRIO.md` e `balance-results.json`. Nenhum perfil consulta o adversário oculto ou as regras futuras.
+
+## Entrega
+
+A prévia desta revisão é local e destinada a teste no Work. O catálogo e as partidas continuam estáticos, sem API externa durante uso. O mesmo PR #2 recebe novos commits, preservando histórico, workflow, pasta publicada e endereço público. A integração à main e a publicação dependem de aprovação explícita posterior.
