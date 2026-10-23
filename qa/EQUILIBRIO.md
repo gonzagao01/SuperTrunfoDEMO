@@ -1,31 +1,53 @@
-# Simulações de equilíbrio — dificuldade normal
+# Simulações dos três modos
 
-Foram executadas 20.000 partidas completas (240.000 rodadas), com 5.000 partidas por perfil. Todas concluíram as 12 rodadas com 24 cartas distintas, mãos e reservas válidas e os seis indicadores uma vez em cada objetivo.
+Foram executadas **60.000 partidas completas / 720.000 rodadas**, 5.000 partidas por combinação de modo e perfil. Todas passaram pelas verificações de 12 rodadas, 24 cartas distintas, mão legal, distribuição Normal de seis países por grupo para cada lado, descarte e uma ocorrência de cada indicador em cada objetivo.
 
-| Jogador simulado | Vitórias do computador | Vitórias do jogador | Empates | Pontos médios computador / jogador |
+## Fácil
+
+| Jogador simulado | Computador vence | Jogador vence | Empate | Pontos médios computador / jogador |
 | --- | ---: | ---: | ---: | ---: |
-| Sem conhecimento (escolha aleatória) | 78,80% | 8,54% | 12,66% | 7,772 / 4,228 |
-| Conhecimento básico | 54,98% | 22,88% | 22,14% | 6,723 / 5,277 |
-| Conhecimento intermediário | 36,98% | 39,58% | 23,44% | 5,950 / 6,050 |
-| Conhecimento elevado | 21,78% | 57,48% | 20,74% | 5,217 / 6,783 |
+| Escolha aleatória | 79,60% | 7,66% | 12,74% | 7,796 / 4,200 |
+| Conhecimento básico | 12,04% | 71,76% | 16,20% | 4,593 / 7,399 |
+| Conhecimento intermediário | 7,34% | 80,24% | 12,42% | 4,200 / 7,793 |
+| Conhecimento elevado | 3,52% | 89,48% | 7,00% | 3,643 / 8,346 |
 
-As porcentagens são de partidas, com empates contabilizados separadamente. Não houve ajuste para obter 50% de vitórias. Os pesos do computador permaneceram em 70% / 25% / 5% e a incerteza em 0,15 em todos os cenários. Com 5.000 partidas por perfil, a margem amostral aproximada máxima é de 1,4 ponto percentual (95%); isso não mede a incerteza dos modelos de jogador.
+## Normal
 
-## O que foi modelado
+| Jogador simulado | Computador vence | Jogador vence | Empate | Pontos médios computador / jogador |
+| --- | ---: | ---: | ---: | ---: |
+| Escolha aleatória | 79,76% | 8,48% | 11,76% | 7,835 / 4,163 |
+| Conhecimento básico | 56,26% | 22,96% | 20,78% | 6,743 / 5,255 |
+| Conhecimento intermediário | 38,74% | 38,06% | 23,20% | 6,004 / 5,995 |
+| Conhecimento elevado | 17,40% | 64,00% | 18,60% | 4,923 / 7,075 |
 
-- Sem conhecimento: escolha uniforme entre as cartas disponíveis.
-- Básico: estimativas mais imprecisas (incerteza 0,35); pesos 55% / 30% / 15%.
-- Intermediário: mesmas estimativas e pesos do computador, com sorteios independentes.
-- Elevado: estimativas mais precisas, ainda incertas (0,06); pesos 90% / 9% / 1%.
+## Difícil
 
-Esses perfis representam conhecimento prévio sobre os próprios países. O simulador resolve somente os IDs da mão ativa do jogador em um catálogo para modelar essa memória. A interface real continua sem números antes da revelação. Nenhum perfil consulta as cartas adversárias, a decisão do computador ou as regras futuras. Os resultados são comparações entre modelos e não previsões de vitória de jogadores reais.
+| Jogador simulado | Computador vence | Jogador vence | Empate | Pontos médios computador / jogador |
+| --- | ---: | ---: | ---: | ---: |
+| Escolha aleatória | 79,62% | 7,88% | 12,50% | 7,815 / 4,185 |
+| Conhecimento básico | 58,28% | 21,20% | 20,52% | 6,840 / 5,160 |
+| Conhecimento intermediário | 38,56% | 37,66% | 23,78% | 6,030 / 5,970 |
+| Conhecimento elevado | 23,18% | 55,58% | 21,24% | 5,281 / 6,719 |
 
-Cada perfil usou as mesmas sementes 120001 a 125000, com um gerador independente para as escolhas do jogador. Foram 5000 baralhos próprios distintos e 5000 sequências distintas por perfil. A decisão do computador foi definida no início de cada rodada, antes da seleção adversária.
+As taxas são de partidas; empates ficam separados. Não houve ajuste para aproximar 50%. O mesmo computador usa 70/25/5 e incerteza 0,15 nos três modos. A margem amostral máxima aproximada de cada taxa é de 1,4 ponto percentual a 95%; isso não mede a validade dos modelos de conhecimento.
 
-## Incerteza da avaliação
+## Perfis e limites
 
-Em 12.000 mãos independentes, a carta estimada como melhor não era a melhor pelo valor real em 675 casos (5,63%). Além desse erro, o sorteio pode escolher a segunda ou a terceira estimativa. Os pesos se referem à ordem estimada, não à ordem real nem à chance de vencer a rodada. A avaliação usa arredondamento e ruído apenas sobre os próprios valores, sem percentis, distribuições do catálogo ou cálculo exato de probabilidade de vitória.
+- Aleatório: escolha uniforme entre todas as cartas legalmente disponíveis, sem consultar números.
+- Básico: pesos 55/30/15; incerteza-base 0,35 quando há valores ocultos.
+- Intermediário: pesos 70/25/5; incerteza-base 0,15 quando há valores ocultos.
+- Elevado: pesos 90/9/1; incerteza-base 0,06 quando há valores ocultos.
 
-## Reproduzir
+No Fácil e no Normal os valores são visíveis de fato. Básico e intermediário ordenam os valores atuais e sorteiam entre as três primeiras alternativas com seus pesos, para representar erros de leitura/decisão. O perfil elevado escolhe o melhor valor atual entre as cartas legalmente disponíveis (todas as restantes no Fácil; a mão no Normal), sem prever adversário ou rodadas futuras. Isso explica a vantagem educacional desse modo; não equivale a uma estratégia global ótima.
 
-Execute `node scripts/simulate-balance.mjs`. Detalhes e contagens estão em `qa/balance-results.json`. O dataset SHA-256 é `3cd1d5ebb4b148e37d9d0b150b15529d4a89cb51c0e3242c9fbf32d7868aa9bb`.
+Somente no Difícil, um modelo de memória resolve apenas os IDs da própria mão ativa. Para representar a menor familiaridade, a incerteza-base é multiplicada por 1 + 0,8 × fração de países da mão fora da lista Fácil. Essa hipótese é explícita e usada SOMENTE nos jogadores simulados do Difícil. No Normal, a leitura dos valores substitui a memória de números ocultos. O robô não recebe essa alteração. Não é uma medição do conhecimento real do público.
+
+Nenhum perfil consulta IDs ou valores adversários, escolha prévia do robô, reserva ou regras futuras. Os resultados comparam modelos; não estimam probabilidades de vitória de pessoas reais. A variedade mundial não garante uma taxa de derrota maior para todos os modelos: extremos demográficos e o baralho sorteado também influenciam as disputas.
+
+## Verificação da avaliação aproximada
+
+Em 12.000 mãos sorteadas do banco mundial, a melhor estimativa do robô não correspondia ao melhor valor real em 695 casos (5,79%). Além desse erro há a escolha ponderada da segunda ou terceira estimativa. Pesos não são chances de vencer: a comparação só ocorre após ambas as decisões.
+
+## Reprodução
+
+Execute `node scripts/simulate-balance.mjs`. Cada perfil usa as mesmas sementes 120001–125000, com um gerador independente para decisões do jogador. Cada combinação produziu 5000 baralhos próprios distintos e 5000 sequências distintas. Contagens, configuração e hipóteses estão em `balance-results.json`. Dataset SHA-256: `8d883b71d395a5bf58a86c8a58a1320d1250e6e7740da69ea8b25a668a30bb4e`.

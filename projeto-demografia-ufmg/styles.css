@@ -172,3 +172,192 @@ dialog p { color: var(--muted); font-size: 13px; }
   .country-name-row { gap: 8px; }
   .tutorial-dialog { max-height: calc(100svh - 32px); overflow-y: auto; }
 }
+.mode-picker { border: 0; padding: 0; margin: 26px 0 0; text-align: left; }
+.mode-picker legend { font-size: 12px; color: var(--muted); margin-bottom: 9px; }
+.mode-option { display: flex; align-items: flex-start; gap: 10px; padding: 12px; margin-top: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 7px; cursor: pointer; }
+.mode-option:has(:checked) { border-color: #6e8bb2; background: #1b2635; }
+.mode-option:focus-within { outline: 2px solid #79b8ff; outline-offset: 3px; }
+.mode-option input { flex: 0 0 auto; margin: 4px 0 0; accent-color: #a9c5e8; }
+.mode-option strong { font-weight: 500; font-size: 14px; }
+.mode-description, .mode-recommendation { display: block; font-size: 12px; color: #a9b3be; margin-top: 4px; line-height: 1.5; }
+.mode-recommendation { color: var(--muted); font-size: 11px; }
+.menu .mode-picker + .primary { margin-top: 20px; }
+.scoreboard { grid-template-columns: minmax(75px,1fr) minmax(0,3fr) minmax(75px,1fr); gap: 14px; }
+.round-goal { padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 7px; }
+.round-count { font-size: 12px; color: #a9b3be; margin-bottom: 3px; }
+.round-goal h1 { margin: 0; line-height: 1.35; }
+.round-goal .objective-value { display: block; font-size: 28px; font-weight: 600; letter-spacing: -.4px; }
+.round-goal .objective-label { font-size: 16px; color: var(--text); margin-top: 5px; }
+.goal-instruction { font-size: 13px; color: #a9b3be; margin-top: 9px; }
+.hand-tools { align-items: center; justify-content: space-between; gap: 12px; }
+.hand-tools > span { font-size: 12px; color: var(--muted); }
+.small-flag { width: 32px; height: 22px; object-fit: contain; border-radius: 2px; flex-shrink: 0; }
+.hand-picker .hand-choice { min-height: 70px; gap: 6px; }
+/* Visible hands share the approved card language, with one focal value. */
+.learning-deck { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; align-items: start; }
+.learning-deck.full-deck { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.learning-card { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 10px; min-width: 0; }
+.learning-card.selected { border-color: #79b8ff; }
+.learning-heading { display: flex; align-items: center; gap: 8px; min-height: 46px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.learning-heading h2 { font-size: 14px; font-weight: 400; line-height: 1.4; overflow-wrap: anywhere; }
+.active-card-value { margin: 10px 0; padding: 8px; background: var(--selected); border-radius: 5px; }
+.active-card-value .indicator-help { min-height: 34px; font-size: 12px; }
+.active-number { display: block; font-size: 23px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.4; overflow-wrap: anywhere; }
+.active-card-value .indicator-unit { display: block; font-size: 11px; }
+.card-select { width: 100%; min-height: 36px; font-size: 12px; padding: 7px 4px; }
+.card-select[aria-pressed="true"] { background: var(--selected); }
+.other-indicators { margin-top: 10px; border-top: 1px solid var(--border); }
+.other-indicators summary { padding-top: 9px; font-size: 11px; color: #a9b3be; cursor: pointer; }
+.other-indicators .indicator { display: block; min-height: 0; padding: 8px 0; }
+.other-indicators .indicator-value { display: block; text-align: left; margin-top: 3px; font-size: 12px; }
+.computer-commit-note { margin: 12px 0; font-size: 12px; color: var(--muted); }
+.sticky-action { position: sticky; bottom: 0; background: var(--bg); padding: 10px 0 max(12px,env(safe-area-inset-bottom)); border-top: 1px solid var(--border); margin-top: 12px; }
+.selection-status { color: #a9b3be; font-size: 12px; margin-top: 10px; }
+.round-action-wrap .round-action { margin-top: 9px; }
+.sticky-action .selection-status { margin-top: 0; }
+.compared-value { padding: 18px 6px 17px; display: flex; flex-direction: column; }
+.comparison-label { color: #a9b3be; font-size: 12px; }
+.comparison-number { display: block; font-size: clamp(24px,3.2vw,36px); font-weight: 600; line-height: 1.35; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; margin-top: 5px; }
+.comparison-unit { font-size: 12px; color: #a9b3be; }
+.comparison-winner { font-size: 12px; margin-top: 9px; }
+.winning-value .comparison-number, .winning-value .comparison-winner, strong.winning-value { color: #7ee787; }
+.full-indicators { border-top: 1px solid var(--border); }
+.full-indicators summary { font-size: 12px; color: #a9b3be; padding: 12px 6px; cursor: pointer; }
+.full-indicators .indicator-list { padding-top: 0; }
+.round-result { font-size: 17px; line-height: 1.4; }
+.round-result.win-text { color: var(--text); }
+.round-detail { color: var(--text); font-size: 14px; line-height: 1.6; margin-top: 8px; }
+.comparison-context { margin-top: 9px; font-size: 11px; color: var(--muted); }
+.result-ties { color: #a9b3be; font-size: 13px; margin: -12px 0 24px; }
+.info-content h3 { font-size: 14px; font-weight: 500; margin: 18px 0 7px; }
+.tutorial-dialog { width: min(100% - 32px,520px); max-height: calc(100svh - 32px); overflow-y: auto; }
+.tutorial-dialog .tutorial-progress { font-size: 11px; margin-bottom: 7px; }
+.tutorial-dialog p { line-height: 1.6; }
+.tutorial-goal { margin: 15px 0; }
+.tutorial-goal .round-goal { background: var(--bg); }
+.tutorial-choices { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 16px 0; }
+.tutorial-choices button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 82px; padding: 8px 4px; font-size: 12px; }
+.tutorial-choices .selected { background: var(--selected); border-color: #79b8ff; }
+.tutorial-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; padding: 15px 0; margin: 10px 0; border-block: 1px solid var(--border); }
+.tutorial-comparison > div { min-width: 0; }
+.tutorial-comparison span { font-size: 13px; color: #a9b3be; }
+.tutorial-comparison .comparison-number { font-size: clamp(18px,4vw,26px); }
+.tutorial-dialog .dialog-actions { flex-wrap: wrap; }
+.tutorial-dialog .dialog-actions .text-button { margin-right: auto; }
+@media (max-width: 820px) {
+  .learning-deck.full-deck { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 620px) {
+  .scoreboard { grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 15px; }
+  .player-score { grid-column: 1; grid-row: 1; }
+  .computer-score { grid-column: 2; grid-row: 1; }
+  .round-goal { grid-column: 1 / -1; grid-row: 2; padding: 12px; }
+  .round-goal .objective-value { font-size: 26px; }
+  .round-goal .objective-label { font-size: 15px; }
+  .goal-instruction { font-size: 12px; }
+  .learning-deck, .learning-deck.full-deck { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .learning-card { padding: 8px; }
+  .learning-heading h2 { font-size: 12px; }
+  .active-card-value { padding: 6px; }
+  .active-card-value .indicator-help { font-size: 11px; min-height: 33px; }
+  .active-number { font-size: 16px; letter-spacing: -.2px; }
+  .hand-tools > span { max-width: 190px; }
+  .hand-tools .text-button { white-space: nowrap; }
+  .comparison-number { font-size: 30px; }
+  .tutorial-dialog { padding: 20px; }
+  .tutorial-dialog .dialog-actions .primary { flex: 1 0 100%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-card { animation: reveal-card 400ms ease-out both; }
+  .winning-value .comparison-number { animation: reveal-winning-value 400ms ease-out both; }
+  @keyframes reveal-card { from { opacity: .3; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes reveal-winning-value { from { opacity: .4; } to { opacity: 1; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+.indicator-help { background: transparent; border: 0; padding: 0; color: inherit; text-align: left; font: inherit; text-decoration: underline dotted; text-underline-offset: 4px; min-width: 0; overflow-wrap: anywhere; }
+.indicator .indicator-help { color: #a9b3be; font-size: 12px; }
+.indicator.selected .indicator-help { color: var(--text); }
+.indicator-help:hover { color: var(--text); }
+.menu-links { flex-wrap: wrap; gap: 10px 22px; }
+.main-navigation { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 20px; }
+.main-navigation [aria-current="page"] { color: var(--text); }
+.atlas-shell { width: min(100% - 24px,1040px); margin: 0 auto; padding-bottom: 36px; }
+.atlas-shell h1 { margin-bottom: 9px; }
+.atlas-shell .catalog-intro { margin-bottom: 9px; }
+.study-source { color: #a9b3be; font-size: 12px; line-height: 1.65; margin: 12px 0; }
+.catalog-filters, .comparison-selectors { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0 10px; }
+.catalog-filters label, .comparison-selectors label { display: block; color: #a9b3be; font-size: 12px; min-width: 0; }
+input[type="search"], select { display: block; width: 100%; min-height: 42px; border: 1px solid var(--border); border-radius: 6px; padding: 9px 10px; background: var(--surface); color: var(--text); font: inherit; font-size: 14px; margin-top: 6px; }
+input:focus-visible, select:focus-visible { outline: 2px solid #79b8ff; outline-offset: 2px; }
+.catalog-count { color: var(--muted); font-size: 12px; margin-bottom: 12px !important; }
+.catalog-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(130px,1fr)); gap: 10px; }
+.catalog-country { min-width: 0; min-height: 92px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 12px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); font-size: 13px; line-height: 1.4; }
+.catalog-country:hover { border-color: #6e7681; background: #1c222b; }
+.catalog-empty { margin: 20px 0 12px; }
+.atlas-compare-panel { margin: 22px 0; padding: 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.atlas-compare-panel > summary { font-size: 14px; cursor: pointer; }
+.comparison-selectors { margin: 16px 0; }
+.study-comparison { width: 100%; table-layout: fixed; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.study-comparison .indicator-column { width: 42%; }
+.study-comparison th, .study-comparison td { padding: 12px 8px; border-bottom: 1px solid var(--border); text-align: right; font-weight: 400; font-size: 15px; overflow-wrap: anywhere; }
+.study-comparison th:first-child { text-align: left; }
+.study-comparison thead th { text-align: center; font-size: 13px; vertical-align: top; }
+.study-comparison thead .small-flag { display: block; margin: 0 auto 8px; }
+.study-comparison thead span { display: block; }
+.study-comparison th .indicator-help { font-size: 13px; }
+.study-unit { display: block; color: #a9b3be; font-size: 11px; margin-top: 5px; line-height: 1.5; }
+.study-neutral { margin: 14px 0 0 !important; font-size: 12px; color: #a9b3be; }
+.region-explanation { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 12px; font-size: 12px; color: #a9b3be; }
+.region-explanation summary { cursor: pointer; }
+.region-explanation p { font-size: 12px; margin: 12px 0; }
+.country-detail, .indicator-dialog { width: min(100% - 24px,520px); max-height: calc(100svh - 24px); overflow-y: auto; }
+.country-detail .country-heading { padding-bottom: 12px; }
+.study-region { margin-top: 6px; font-size: 12px; color: var(--muted); }
+.country-detail .dialog-actions { flex-wrap: wrap; }
+.indicator-dialog h3 { font-size: 13px; font-weight: 500; margin: 18px 0 5px; }
+.indicator-dialog p { line-height: 1.7; }
+.definition-unit, .definition-source { font-size: 12px !important; }
+.definition-source { border-top: 1px solid var(--border); margin-top: 18px; padding-top: 12px; }
+.study-definitions .definition { padding: 14px 0 8px; }
+.study-definitions .definition p { margin: 8px 0; font-size: 13px; }
+.leave-actions { flex-direction: column; }
+@media (max-width: 620px) {
+  .atlas-shell { width: calc(100% - 32px); }
+  .atlas-shell > .topbar, .info-shell > .topbar { flex-wrap: wrap; padding: 12px 0; gap: 4px; }
+  .atlas-shell > .topbar .brand, .info-shell > .topbar .brand { flex: 1 0 100%; max-width: none; }
+  .atlas-shell > .topbar .topbar-right, .info-shell > .topbar .topbar-right { flex: 1 0 100%; }
+  .main-navigation { justify-content: flex-start; gap: 4px 22px; }
+  .catalog-filters { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .comparison-selectors { gap: 8px; }
+  .comparison-selectors select { font-size: 12px; padding: 9px 5px; }
+  .atlas-compare-panel { padding: 10px 6px; }
+  .study-comparison th, .study-comparison td { font-size: 12px; padding: 10px 3px; }
+  .study-comparison th .indicator-help { font-size: 11px; line-height: 1.5; }
+  .study-comparison thead th { font-size: 11px; }
+  .study-unit { font-size: 10px; }
+  .catalog-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .catalog-country { font-size: 12px; }
+  .country-detail, .indicator-dialog { padding: 18px; }
+}
+
+.round-goal .objective-label { text-transform: uppercase; }
+.round-goal .objective-label .indicator-help { text-transform: uppercase; }
+@media (max-width: 620px) {
+  .study-comparison, .study-comparison thead, .study-comparison tbody { display: block; }
+  .study-comparison colgroup { display: none; }
+  .study-comparison tr { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); border-bottom: 1px solid var(--border); }
+  .study-comparison thead th:first-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); padding: 0; }
+  .study-comparison tbody th { grid-column: 1 / -1; padding: 10px 5px 4px; }
+  .study-comparison th, .study-comparison td { border-bottom: 0; }
+  .study-comparison td { text-align: center; white-space: nowrap; font-size: 14px; padding: 7px 2px 12px; }
+}
+
+.demo-number { font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
+@media (max-width: 620px) {
+  .tutorial-choices { grid-template-columns: minmax(0,1fr); }
+  .tutorial-choices button { display: grid; grid-template-columns: 32px 1fr; min-height: 62px; text-align: left; padding: 8px 12px; }
+  .tutorial-choices .small-flag { grid-row: span 2; }
+}
