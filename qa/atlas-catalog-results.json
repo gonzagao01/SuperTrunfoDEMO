@@ -1,46 +1,49 @@
 {
-  "countries": 195,
-  "validatedValues": 1170,
-  "regionUi": [
-    {
-      "code": "002",
-      "count": 54
-    },
-    {
-      "code": "019",
-      "count": 35
-    },
-    {
-      "code": "142",
-      "count": 48
-    },
-    {
-      "code": "150",
-      "count": 44
-    },
-    {
-      "code": "009",
-      "count": 14
-    }
+  "countries": 194,
+  "values": 1164,
+  "israelSearch": "0 de 194 países",
+  "regions": {
+    "142": 47,
+    "150": 44,
+    "002": 54,
+    "019": 35,
+    "009": 14
+  },
+  "normalPermanent": true,
+  "norwayValues": [
+    "5.576.660 hab.",
+    "83,46 anos",
+    "1,4102 filhos/mulher",
+    "1,7842 ‰ NV",
+    "7,954 ‰ hab.",
+    "39,6676 anos"
   ],
-  "accentInsensitiveSearch": true,
-  "combinedEmptyFilter": true,
-  "nestedIndicatorDialog": true,
-  "sixCountryValues": true,
-  "togoFertility": "4,121673",
-  "neutralComparison": true,
-  "navigation": [
-    "Jogar",
-    "Baralho",
-    "Sobre o projeto",
-    "Como jogar"
-  ],
-  "tutorialSteps": 3,
-  "tutorialVisibleExampleValues": 3,
-  "normalVisible": true,
-  "hardHidden": true,
-  "easyTwoColumnMobileGrid": true,
-  "explicitEndBeforeCatalogue": true,
-  "mobileComparisonLargePopulations": true,
-  "browserErrors": []
+  "comparison": {
+    "excluded": false,
+    "rows": 6,
+    "scrollWidth": 341,
+    "values": 12,
+    "width": 341
+  },
+  "narrowNormal": {
+    "cards": 3,
+    "numbers": 18,
+    "scrollWidth": 277,
+    "visible": true,
+    "width": 277
+  },
+  "ownDeck": {
+    "cards": 12,
+    "choices": 0,
+    "excluded": false,
+    "hand": 3,
+    "numbers": 0,
+    "reserve": 9
+  },
+  "about": {
+    "excludedText": false,
+    "text": "194 países (192 membros da ONU e 2 Estados observadores), com 1164 valores."
+  },
+  "tutorial": true,
+  "applicationErrors": []
 }

@@ -1,6 +1,8 @@
 # Fontes e cobertura demográfica — revisão de 23/10/2026
 
-**195 países incluídos: 193 Estados-membros da ONU e dois observadores, com 1.170 valores válidos.** Todos têm os seis indicadores. Nenhum país solicitado ficou sem cobertura; não foi necessário substituir nenhum das listas propostas, inventar valores ou preencher ausências com zero. Os 36 países da versão anterior e seus 216 valores foram preservados integralmente. Foram acrescentados 159 países e 954 valores.
+**194 países disponíveis: 192 Estados-membros da ONU e dois observadores, com 1.164 valores válidos.** Os seis valores, nomes e bandeiras de cada país restante são idênticos aos da revisão aprovada em `1d380c37aa19d5a4c1be78c9d69ad95120dac86b`. Os 36 países da versão original e seus 216 valores também continuam intactos.
+
+Israel foi excluído das opções do jogo por solicitação editorial. Seus dados não foram renomeados nem atribuídos a outro país. A Noruega já integrava o catálogo validado e passa a ocupar a vaga nas listas Fácil e conhecida do Normal, preservando 36/60 países e o equilíbrio 30/30. O banco mundial passa de 195 para 194; não foi criado nenhum valor novo. A exclusão editorial é aplicada pelo importador para evitar reintrodução acidental.
 
 ## Fontes primárias e referência
 
@@ -26,13 +28,13 @@ A comparação usa os valores originais, sem arredondamento. Taxas e idades são
 
 ## Auditoria e reprodução
 
-O arquivo `scripts/fixtures/un-register.json` associa cada código ao nome da ONU, ao nome do WPP, à bandeira e ao estado de cobertura. O arquivo `scripts/fixtures/wpp-2024-source-rows.csv` preserva os seis campos brutos de cada linha de 2024, identificando Togo como atualização intermediária. `qa/coverage.json` contém a versão estruturada deste levantamento. Os testes conferem os 1.170 valores contra essas linhas e os 216 valores anteriores contra a versão estável.
+A auditoria de fonte mantém 195 registros estatísticos, inclusive o registro excluído, somente fora da pasta publicada; `available: false` distingue a exclusão editorial de dados ausentes. A lista jogável, os downloads JSON/CSV, as regiões e o catálogo contêm somente 194 registros. O arquivo `scripts/fixtures/un-register.json` associa cada código ao nome da ONU, ao nome do WPP, à bandeira e ao estado de cobertura. O arquivo `scripts/fixtures/wpp-2024-source-rows.csv` preserva os seis campos brutos de cada linha de 2024, identificando Togo como atualização intermediária. `qa/coverage.json` contém a versão estruturada deste levantamento. Os testes conferem os 1.164 valores disponíveis contra essas linhas e os 216 valores anteriores contra a versão estável.
 
 Baixe os quatro arquivos oficiais descritos na documentação de `scripts/import-data.py` para uma pasta de fontes e execute `python3 scripts/import-data.py /caminho/da/pasta`. Os arquivos esperados são `WPP2024_Demographic_Indicators_Medium.csv.gz`, `WPP2024_CSV_files_update.zip`, `un-members.html` e `un-observers.html`. O importador fixa a revisão principal por SHA-256 e falha se a lista da ONU mudar, para exigir revisão humana. Execute depois `node scripts/test.mjs`.
 
-As 195 bandeiras são SVG locais do [FlagCDN](https://flagcdn.com/), compatíveis com os códigos ISO2. Foram verificadas quanto à existência, formato SVG e ausência de scripts/foreignObject/eventos onload. O manifesto `qa/flag-sources.json` registra URL e SHA-256 de cada arquivo. As 36 bandeiras anteriores foram reaproveitadas sem alteração. Não há acesso a APIs durante partidas.
+As 194 bandeiras são SVG locais do [FlagCDN](https://flagcdn.com/), compatíveis com os códigos ISO2. Foram verificadas quanto à existência, formato SVG e ausência de scripts/foreignObject/eventos onload. O manifesto `qa/flag-sources.json` registra URL e SHA-256 de cada arquivo. As 36 bandeiras anteriores foram reaproveitadas sem alteração. Não há acesso a APIs durante partidas.
 
-Dados WPP: licença CC BY 3.0 IGO, conforme metadados anteriores. As listas de familiaridade são editoriais, sem ranking de desenvolvimento ou de força. O banco mundial segue o registro oficial da ONU, sem seleção por familiaridade.
+Dados WPP: licença CC BY 3.0 IGO, conforme metadados anteriores. As listas de familiaridade são editoriais, sem ranking de desenvolvimento ou de força. O banco mundial parte do registro oficial da ONU e aplica a exclusão editorial documentada, sem filtro de familiaridade.
 
 ## Integridade dos arquivos consultados
 
@@ -138,7 +140,6 @@ Dados WPP: licença CC BY 3.0 IGO, conforme metadados anteriores. As listas de f
 | Iraque | IRQ | Membro | 6 / 6 |
 | Irlanda | IRL | Membro | 6 / 6 |
 | Islândia | ISL | Membro | 6 / 6 |
-| Israel | ISR | Membro | 6 / 6 |
 | Itália | ITA | Membro | 6 / 6 |
 | Jamaica | JAM | Membro | 6 / 6 |
 | Japão | JPN | Membro | 6 / 6 |

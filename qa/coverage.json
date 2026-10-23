@@ -43,11 +43,18 @@
     "coverage": {
       "requestedMembers": 193,
       "requestedObservers": 2,
-      "includedMembers": 193,
+      "includedMembers": 192,
       "includedObservers": 2,
-      "countries": 195,
-      "values": 1170,
-      "excluded": []
+      "countries": 194,
+      "values": 1164,
+      "excluded": [
+        {
+          "id": "ISR",
+          "name": "Israel",
+          "type": "editorial",
+          "reason": "Exclusão editorial solicitada para o jogo; não indica ausência ou invalidade dos dados."
+        }
+      ]
     },
     "membershipSources": [
       {
@@ -69,7 +76,8 @@
       "flag": "af",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "AGO",
@@ -79,7 +87,8 @@
       "flag": "ao",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ALB",
@@ -89,7 +98,8 @@
       "flag": "al",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "AND",
@@ -99,7 +109,8 @@
       "flag": "ad",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ARE",
@@ -109,7 +120,8 @@
       "flag": "ae",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ARG",
@@ -119,7 +131,8 @@
       "flag": "ar",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ARM",
@@ -129,7 +142,8 @@
       "flag": "am",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ATG",
@@ -139,7 +153,8 @@
       "flag": "ag",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "AUS",
@@ -149,7 +164,8 @@
       "flag": "au",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "AUT",
@@ -159,7 +175,8 @@
       "flag": "at",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "AZE",
@@ -169,7 +186,8 @@
       "flag": "az",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BDI",
@@ -179,7 +197,8 @@
       "flag": "bi",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BEL",
@@ -189,7 +208,8 @@
       "flag": "be",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BEN",
@@ -199,7 +219,8 @@
       "flag": "bj",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BFA",
@@ -209,7 +230,8 @@
       "flag": "bf",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BGD",
@@ -219,7 +241,8 @@
       "flag": "bd",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BGR",
@@ -229,7 +252,8 @@
       "flag": "bg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BHR",
@@ -239,7 +263,8 @@
       "flag": "bh",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BHS",
@@ -249,7 +274,8 @@
       "flag": "bs",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BIH",
@@ -259,7 +285,8 @@
       "flag": "ba",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BLR",
@@ -269,7 +296,8 @@
       "flag": "by",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BLZ",
@@ -279,7 +307,8 @@
       "flag": "bz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BOL",
@@ -289,7 +318,8 @@
       "flag": "bo",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BRA",
@@ -299,7 +329,8 @@
       "flag": "br",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BRB",
@@ -309,7 +340,8 @@
       "flag": "bb",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BRN",
@@ -319,7 +351,8 @@
       "flag": "bn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BTN",
@@ -329,7 +362,8 @@
       "flag": "bt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "BWA",
@@ -339,7 +373,8 @@
       "flag": "bw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CAF",
@@ -349,7 +384,8 @@
       "flag": "cf",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CAN",
@@ -359,7 +395,8 @@
       "flag": "ca",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CHE",
@@ -369,7 +406,8 @@
       "flag": "ch",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CHL",
@@ -379,7 +417,8 @@
       "flag": "cl",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CHN",
@@ -389,7 +428,8 @@
       "flag": "cn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CIV",
@@ -399,7 +439,8 @@
       "flag": "ci",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CMR",
@@ -409,7 +450,8 @@
       "flag": "cm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "COD",
@@ -419,7 +461,8 @@
       "flag": "cd",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "COG",
@@ -429,7 +472,8 @@
       "flag": "cg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "COL",
@@ -439,7 +483,8 @@
       "flag": "co",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "COM",
@@ -449,7 +494,8 @@
       "flag": "km",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CPV",
@@ -459,7 +505,8 @@
       "flag": "cv",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CRI",
@@ -469,7 +516,8 @@
       "flag": "cr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CUB",
@@ -479,7 +527,8 @@
       "flag": "cu",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CYP",
@@ -489,7 +538,8 @@
       "flag": "cy",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "CZE",
@@ -499,7 +549,8 @@
       "flag": "cz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DEU",
@@ -509,7 +560,8 @@
       "flag": "de",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DJI",
@@ -519,7 +571,8 @@
       "flag": "dj",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DMA",
@@ -529,7 +582,8 @@
       "flag": "dm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DNK",
@@ -539,7 +593,8 @@
       "flag": "dk",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DOM",
@@ -549,7 +604,8 @@
       "flag": "do",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "DZA",
@@ -559,7 +615,8 @@
       "flag": "dz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ECU",
@@ -569,7 +626,8 @@
       "flag": "ec",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "EGY",
@@ -579,7 +637,8 @@
       "flag": "eg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ERI",
@@ -589,7 +648,8 @@
       "flag": "er",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ESP",
@@ -599,7 +659,8 @@
       "flag": "es",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "EST",
@@ -609,7 +670,8 @@
       "flag": "ee",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ETH",
@@ -619,7 +681,8 @@
       "flag": "et",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "FIN",
@@ -629,7 +692,8 @@
       "flag": "fi",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "FJI",
@@ -639,7 +703,8 @@
       "flag": "fj",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "FRA",
@@ -649,7 +714,8 @@
       "flag": "fr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "FSM",
@@ -659,7 +725,8 @@
       "flag": "fm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GAB",
@@ -669,7 +736,8 @@
       "flag": "ga",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GBR",
@@ -679,7 +747,8 @@
       "flag": "gb",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GEO",
@@ -689,7 +758,8 @@
       "flag": "ge",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GHA",
@@ -699,7 +769,8 @@
       "flag": "gh",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GIN",
@@ -709,7 +780,8 @@
       "flag": "gn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GMB",
@@ -719,7 +791,8 @@
       "flag": "gm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GNB",
@@ -729,7 +802,8 @@
       "flag": "gw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GNQ",
@@ -739,7 +813,8 @@
       "flag": "gq",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GRC",
@@ -749,7 +824,8 @@
       "flag": "gr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GRD",
@@ -759,7 +835,8 @@
       "flag": "gd",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GTM",
@@ -769,7 +846,8 @@
       "flag": "gt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "GUY",
@@ -779,7 +857,8 @@
       "flag": "gy",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "HND",
@@ -789,7 +868,8 @@
       "flag": "hn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "HRV",
@@ -799,7 +879,8 @@
       "flag": "hr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "HTI",
@@ -809,7 +890,8 @@
       "flag": "ht",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "HUN",
@@ -819,7 +901,8 @@
       "flag": "hu",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "IDN",
@@ -829,7 +912,8 @@
       "flag": "id",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "IND",
@@ -839,7 +923,8 @@
       "flag": "in",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "IRL",
@@ -849,7 +934,8 @@
       "flag": "ie",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "IRN",
@@ -859,7 +945,8 @@
       "flag": "ir",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "IRQ",
@@ -869,7 +956,8 @@
       "flag": "iq",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ISL",
@@ -879,7 +967,8 @@
       "flag": "is",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ISR",
@@ -889,7 +978,8 @@
       "flag": "il",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": false
     },
     {
       "id": "ITA",
@@ -899,7 +989,8 @@
       "flag": "it",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "JAM",
@@ -909,7 +1000,8 @@
       "flag": "jm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "JOR",
@@ -919,7 +1011,8 @@
       "flag": "jo",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "JPN",
@@ -929,7 +1022,8 @@
       "flag": "jp",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KAZ",
@@ -939,7 +1033,8 @@
       "flag": "kz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KEN",
@@ -949,7 +1044,8 @@
       "flag": "ke",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KGZ",
@@ -959,7 +1055,8 @@
       "flag": "kg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KHM",
@@ -969,7 +1066,8 @@
       "flag": "kh",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KIR",
@@ -979,7 +1077,8 @@
       "flag": "ki",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KNA",
@@ -989,7 +1088,8 @@
       "flag": "kn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KOR",
@@ -999,7 +1099,8 @@
       "flag": "kr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "KWT",
@@ -1009,7 +1110,8 @@
       "flag": "kw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LAO",
@@ -1019,7 +1121,8 @@
       "flag": "la",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LBN",
@@ -1029,7 +1132,8 @@
       "flag": "lb",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LBR",
@@ -1039,7 +1143,8 @@
       "flag": "lr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LBY",
@@ -1049,7 +1154,8 @@
       "flag": "ly",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LCA",
@@ -1059,7 +1165,8 @@
       "flag": "lc",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LIE",
@@ -1069,7 +1176,8 @@
       "flag": "li",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LKA",
@@ -1079,7 +1187,8 @@
       "flag": "lk",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LSO",
@@ -1089,7 +1198,8 @@
       "flag": "ls",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LTU",
@@ -1099,7 +1209,8 @@
       "flag": "lt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LUX",
@@ -1109,7 +1220,8 @@
       "flag": "lu",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "LVA",
@@ -1119,7 +1231,8 @@
       "flag": "lv",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MAR",
@@ -1129,7 +1242,8 @@
       "flag": "ma",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MCO",
@@ -1139,7 +1253,8 @@
       "flag": "mc",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MDA",
@@ -1149,7 +1264,8 @@
       "flag": "md",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MDG",
@@ -1159,7 +1275,8 @@
       "flag": "mg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MDV",
@@ -1169,7 +1286,8 @@
       "flag": "mv",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MEX",
@@ -1179,7 +1297,8 @@
       "flag": "mx",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MHL",
@@ -1189,7 +1308,8 @@
       "flag": "mh",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MKD",
@@ -1199,7 +1319,8 @@
       "flag": "mk",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MLI",
@@ -1209,7 +1330,8 @@
       "flag": "ml",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MLT",
@@ -1219,7 +1341,8 @@
       "flag": "mt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MMR",
@@ -1229,7 +1352,8 @@
       "flag": "mm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MNE",
@@ -1239,7 +1363,8 @@
       "flag": "me",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MNG",
@@ -1249,7 +1374,8 @@
       "flag": "mn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MOZ",
@@ -1259,7 +1385,8 @@
       "flag": "mz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MRT",
@@ -1269,7 +1396,8 @@
       "flag": "mr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MUS",
@@ -1279,7 +1407,8 @@
       "flag": "mu",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MWI",
@@ -1289,7 +1418,8 @@
       "flag": "mw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "MYS",
@@ -1299,7 +1429,8 @@
       "flag": "my",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NAM",
@@ -1309,7 +1440,8 @@
       "flag": "na",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NER",
@@ -1319,7 +1451,8 @@
       "flag": "ne",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NGA",
@@ -1329,7 +1462,8 @@
       "flag": "ng",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NIC",
@@ -1339,7 +1473,8 @@
       "flag": "ni",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NLD",
@@ -1349,7 +1484,8 @@
       "flag": "nl",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NOR",
@@ -1359,7 +1495,8 @@
       "flag": "no",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NPL",
@@ -1369,7 +1506,8 @@
       "flag": "np",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NRU",
@@ -1379,7 +1517,8 @@
       "flag": "nr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "NZL",
@@ -1389,7 +1528,8 @@
       "flag": "nz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "OMN",
@@ -1399,7 +1539,8 @@
       "flag": "om",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PAK",
@@ -1409,7 +1550,8 @@
       "flag": "pk",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PAN",
@@ -1419,7 +1561,8 @@
       "flag": "pa",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PER",
@@ -1429,7 +1572,8 @@
       "flag": "pe",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PHL",
@@ -1439,7 +1583,8 @@
       "flag": "ph",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PLW",
@@ -1449,7 +1594,8 @@
       "flag": "pw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PNG",
@@ -1459,7 +1605,8 @@
       "flag": "pg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "POL",
@@ -1469,7 +1616,8 @@
       "flag": "pl",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PRK",
@@ -1479,7 +1627,8 @@
       "flag": "kp",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PRT",
@@ -1489,7 +1638,8 @@
       "flag": "pt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PRY",
@@ -1499,7 +1649,8 @@
       "flag": "py",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "PSE",
@@ -1509,7 +1660,8 @@
       "flag": "ps",
       "status": "observer",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "QAT",
@@ -1519,7 +1671,8 @@
       "flag": "qa",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ROU",
@@ -1529,7 +1682,8 @@
       "flag": "ro",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "RUS",
@@ -1539,7 +1693,8 @@
       "flag": "ru",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "RWA",
@@ -1549,7 +1704,8 @@
       "flag": "rw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SAU",
@@ -1559,7 +1715,8 @@
       "flag": "sa",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SDN",
@@ -1569,7 +1726,8 @@
       "flag": "sd",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SEN",
@@ -1579,7 +1737,8 @@
       "flag": "sn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SGP",
@@ -1589,7 +1748,8 @@
       "flag": "sg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SLB",
@@ -1599,7 +1759,8 @@
       "flag": "sb",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SLE",
@@ -1609,7 +1770,8 @@
       "flag": "sl",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SLV",
@@ -1619,7 +1781,8 @@
       "flag": "sv",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SMR",
@@ -1629,7 +1792,8 @@
       "flag": "sm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SOM",
@@ -1639,7 +1803,8 @@
       "flag": "so",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SRB",
@@ -1649,7 +1814,8 @@
       "flag": "rs",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SSD",
@@ -1659,7 +1825,8 @@
       "flag": "ss",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "STP",
@@ -1669,7 +1836,8 @@
       "flag": "st",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SUR",
@@ -1679,7 +1847,8 @@
       "flag": "sr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SVK",
@@ -1689,7 +1858,8 @@
       "flag": "sk",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SVN",
@@ -1699,7 +1869,8 @@
       "flag": "si",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SWE",
@@ -1709,7 +1880,8 @@
       "flag": "se",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SWZ",
@@ -1719,7 +1891,8 @@
       "flag": "sz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SYC",
@@ -1729,7 +1902,8 @@
       "flag": "sc",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "SYR",
@@ -1739,7 +1913,8 @@
       "flag": "sy",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TCD",
@@ -1749,7 +1924,8 @@
       "flag": "td",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TGO",
@@ -1759,7 +1935,8 @@
       "flag": "tg",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "THA",
@@ -1769,7 +1946,8 @@
       "flag": "th",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TJK",
@@ -1779,7 +1957,8 @@
       "flag": "tj",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TKM",
@@ -1789,7 +1968,8 @@
       "flag": "tm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TLS",
@@ -1799,7 +1979,8 @@
       "flag": "tl",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TON",
@@ -1809,7 +1990,8 @@
       "flag": "to",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TTO",
@@ -1819,7 +2001,8 @@
       "flag": "tt",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TUN",
@@ -1829,7 +2012,8 @@
       "flag": "tn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TUR",
@@ -1839,7 +2023,8 @@
       "flag": "tr",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TUV",
@@ -1849,7 +2034,8 @@
       "flag": "tv",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "TZA",
@@ -1859,7 +2045,8 @@
       "flag": "tz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "UGA",
@@ -1869,7 +2056,8 @@
       "flag": "ug",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "UKR",
@@ -1879,7 +2067,8 @@
       "flag": "ua",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "URY",
@@ -1889,7 +2078,8 @@
       "flag": "uy",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "USA",
@@ -1899,7 +2089,8 @@
       "flag": "us",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "UZB",
@@ -1909,7 +2100,8 @@
       "flag": "uz",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "VAT",
@@ -1919,7 +2111,8 @@
       "flag": "va",
       "status": "observer",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "VCT",
@@ -1929,7 +2122,8 @@
       "flag": "vc",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "VEN",
@@ -1939,7 +2133,8 @@
       "flag": "ve",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "VNM",
@@ -1949,7 +2144,8 @@
       "flag": "vn",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "VUT",
@@ -1959,7 +2155,8 @@
       "flag": "vu",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "WSM",
@@ -1969,7 +2166,8 @@
       "flag": "ws",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "YEM",
@@ -1979,7 +2177,8 @@
       "flag": "ye",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ZAF",
@@ -1989,7 +2188,8 @@
       "flag": "za",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ZMB",
@@ -1999,7 +2199,8 @@
       "flag": "zm",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     },
     {
       "id": "ZWE",
@@ -2009,7 +2210,8 @@
       "flag": "zw",
       "status": "member",
       "complete": true,
-      "missing": []
+      "missing": [],
+      "available": true
     }
   ],
   "modeLists": {
@@ -2039,7 +2241,7 @@
       "IDN",
       "PAK",
       "IRN",
-      "ISR",
+      "NOR",
       "SAU",
       "TUR",
       "THA",
@@ -2074,7 +2276,7 @@
       "IDN",
       "PAK",
       "IRN",
-      "ISR",
+      "NOR",
       "TUR",
       "ZAF",
       "EGY",

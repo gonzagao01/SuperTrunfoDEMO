@@ -11,9 +11,10 @@
   "sampledPools": {
     "easy": 36,
     "normal": 60,
-    "hard": 195
+    "hard": 194
   },
   "sourceRows": 195,
-  "values": 1170,
+  "activeCountries": 194,
+  "values": 1164,
   "previousValuesPreserved": 216
 }

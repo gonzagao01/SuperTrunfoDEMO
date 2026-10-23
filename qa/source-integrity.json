@@ -1,13 +1,13 @@
 {
   "baseMainCommit": "4693621d19b8015ad8f0a458934084ca51e6f97d",
-  "reviewBaseCommit": "c3305c318ddf8dcee6658df79f9165a840d8c2a0",
+  "reviewBaseCommit": "1d380c37aa19d5a4c1be78c9d69ad95120dac86b",
   "branch": "atualizacao/tres-modos-mundial",
   "publishedFiles": [
     {
       "path": "projeto-demografia-ufmg/app.js",
-      "bytes": 33853,
-      "sha256": "ae42d6dedb745dcfba0a16ed82250a2630aa9e133d4b0c07f300611bc5c86d54",
-      "gitBlobSha": "f538645765ec96f1ccde5009e4164ae4c0c847c2"
+      "bytes": 34133,
+      "sha256": "6fbf31a3cfc699d3175b403f56fdc4e27e8eb89073b192bb47c43ff425fa453a",
+      "gitBlobSha": "df91362a7b9ab38653c4b4c9fbb7799406902b6d"
     },
     {
       "path": "projeto-demografia-ufmg/assets/favicon.svg",
@@ -476,12 +476,6 @@
       "bytes": 204,
       "sha256": "5a2e2ec73fb75642ce2a9f9237eb472016794fb49e825f72e769d2d10dff3f11",
       "gitBlobSha": "ff76bd85ed003546a4f8e646d2ce26eecfdaff89"
-    },
-    {
-      "path": "projeto-demografia-ufmg/assets/flags/il.svg",
-      "bytes": 309,
-      "sha256": "9e884f0c6d1001f8de2b478d3de9582f93fbbd9badcb31e3f52fefa3974ebc75",
-      "gitBlobSha": "de884eab2a9437917f87521004e3e251fc3bb61f"
     },
     {
       "path": "projeto-demografia-ufmg/assets/flags/in.svg",
@@ -1199,33 +1193,33 @@
     },
     {
       "path": "projeto-demografia-ufmg/data/countries.csv",
-      "bytes": 12449,
-      "sha256": "ae002a2cc153d302688c686c68a9ccd3cdf6e33e3fa8ed6e89e589eba3c98cf7",
-      "gitBlobSha": "0b1bdff82acd57ff839897baef83149ee79a6731"
+      "bytes": 12391,
+      "sha256": "1dde7f3d242d7faadf13a283677c94a9f6c80eae3b4b1c961a470ba43afe3428",
+      "gitBlobSha": "09312fe3c59e7c752bd67f50603093bfd5b534f9"
     },
     {
       "path": "projeto-demografia-ufmg/data/countries.js",
-      "bytes": 36553,
-      "sha256": "e1babccc2a7c70b9beb5aa448098d1da4a407243676daa28149d7aad21eaa7a6",
-      "gitBlobSha": "7872f084448eb9012f33861799c77f3af8c1e882"
+      "bytes": 36531,
+      "sha256": "a3f682b3df1db3ee1775607a6be0dc7460b0a116d97ebfc3f28e736f654d7eee",
+      "gitBlobSha": "aa9a8590ed97e6569277158a3d4d2811a273c651"
     },
     {
       "path": "projeto-demografia-ufmg/data/countries.json",
-      "bytes": 52891,
-      "sha256": "6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5",
-      "gitBlobSha": "3f677aa31e3eea416a40ec2f3255f09ade1a02df"
+      "bytes": 52860,
+      "sha256": "8d883b71d395a5bf58a86c8a58a1320d1250e6e7740da69ea8b25a668a30bb4e",
+      "gitBlobSha": "9a84050d9bf47e2fc2cee8268aaba297c00f6141"
     },
     {
       "path": "projeto-demografia-ufmg/data/geography.js",
-      "bytes": 2722,
-      "sha256": "99a81bbfe2faf35228f6f351bff55c7193bb0007c151d88a8e2829c61f8b5b55",
-      "gitBlobSha": "b058961580aad4d3c4b8c49612d8b2d4586ace3d"
+      "bytes": 2710,
+      "sha256": "7f2ef5453e7cac8a1ed4203314254862774c43510b05c0de6d470943c609f082",
+      "gitBlobSha": "68d3ccae03902161b5f4582f3d328753486c84dd"
     },
     {
       "path": "projeto-demografia-ufmg/data/geography.json",
-      "bytes": 3853,
-      "sha256": "9be8af26b0280fb0c5114005db280e1e4a447297d48d69a8daaae36838f792f3",
-      "gitBlobSha": "dbe1c5cbf5a84ae23968b8b1ce4907ae44ba2894"
+      "bytes": 3835,
+      "sha256": "976d55f04cc6076ab771067313bb2dbbb0334a923aef13f28e7097bc24efae46",
+      "gitBlobSha": "0ab002f22f8beba571564d6f15373673e104f24f"
     },
     {
       "path": "projeto-demografia-ufmg/difficulty.js",
@@ -1242,8 +1236,8 @@
     {
       "path": "projeto-demografia-ufmg/index.html",
       "bytes": 1323,
-      "sha256": "61a80f590c0bac13ea6bd048b950e682c65d796d3f1b6d4f1611bdd4c21ec8ab",
-      "gitBlobSha": "eae2ad0d28025c5455ec9d5fa090952114ac6605"
+      "sha256": "27a39dbc9a54a552dd2dda16723a92b87efcfc81f6218cf694030e170350454e",
+      "gitBlobSha": "90c806f6a9d34ba993e7ffcf65d2ea331e4bc232"
     },
     {
       "path": "projeto-demografia-ufmg/indicators.js",
@@ -1253,9 +1247,9 @@
     },
     {
       "path": "projeto-demografia-ufmg/modes.js",
-      "bytes": 1864,
-      "sha256": "616ace23e70e36005640bb64116b7d4e987d9e33292a9c3e7dc3e2d1c622e317",
-      "gitBlobSha": "8e74276bdbb9106e61dc3bab7dee55a09177f5d5"
+      "bytes": 1883,
+      "sha256": "cb415365dc672d2b3cd8bb1ad94dbda2994b6f75ee6390023786b48a5eff9c82",
+      "gitBlobSha": "f24ae66d32bffe07b1d90cecb56632eb6449014f"
     },
     {
       "path": "projeto-demografia-ufmg/rules.js",
@@ -1275,5 +1269,13 @@
       "sha256": "9b1db46a269898e750a1c628908f7a58a97a7e90838cf9ae0a9497a2537dca38",
       "gitBlobSha": "ccef89f4da26902a6edd3fab6168fbee2980da38"
     }
-  ]
+  ],
+  "activeCountries": 194,
+  "numericValues": 1164,
+  "preservedCountryRecords": 194,
+  "removedCountryIds": [
+    "ISR"
+  ],
+  "modeReplacement": "NOR",
+  "previousDatasetSha256": "6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5"
 }

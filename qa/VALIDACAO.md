@@ -1,57 +1,55 @@
-# Validação — Baralho e melhorias didáticas
+# Validação dos ajustes finais — 23/10/2026
 
-Revisão do PR #2 na branch existente `atualizacao/tres-modos-mundial`, sem integração à main ou publicação no GitHub Pages. Base desta etapa: `c3305c318ddf8dcee6658df79f9165a840d8c2a0`; main preservada em `4693621d19b8015ad8f0a458934084ca51e6f97d`.
+Revisão da branch `atualizacao/tres-modos-mundial`, no mesmo PR #2, a partir de `1d380c37aa19d5a4c1be78c9d69ad95120dac86b`. Sem merge ou publicação. A main permanece em `4693621d19b8015ad8f0a458934084ca51e6f97d` e o workflow de publicação foi preservado.
 
-## Dados e regressão
+## Alterações e integridade
 
-- Dataset canônico e seus arquivos JSON/JS/CSV byte a byte iguais aos da revisão anterior; SHA-256 do JSON `6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5`.
-- Mantidos 195 países, 1.170 valores e 195 bandeiras locais; comparação com as linhas WPP auditadas e com os 36 países anteriores continua passando.
-- Códigos/regiões M49 acrescentados em arquivo separado: África 54, Américas 35, Ásia 48, Europa 44, Oceania 14. Cobertura dos 195 ISO3 e igualdade entre metadados JSON e JS verificadas.
-- Estratégia, configuração, regras e distribuição permaneceram byte a byte iguais. Regressão de 1.000 mãos contra o snapshot anterior da IA: mesmas estimativas e mesmas decisões para entradas/sementes iguais.
+- Normal mantém os seis indicadores abertos nas três cartas: valor e unidade do indicador sorteado em destaque; cinco restantes visíveis sem painel expansível, inclusive após seleção/troca de carta. Fácil e Difícil conservam suas regras de visibilidade.
+- Israel foi retirado do catálogo jogável, dos três formatos de dados, das regiões, das opções de comparação, filtros, sorteios e bandeira sem uso. Pesquisa não retorna resultados. O importador registra a exclusão editorial e não reintroduz o país.
+- Fácil permanece com 36 países e Normal com 60. A Noruega já validada entra nas listas Fácil e conhecida; os 30 menos conhecidos são iguais. Cada participante Normal continua recebendo seis de cada grupo.
+- Banco ativo: 194 países, 1.164 números e 194 bandeiras. Comparação integral com a revisão anterior confirma todos os 194 registros restantes idênticos, incluindo nomes, bandeiras e números. Os 216 valores dos 36 países da versão original também passam pela regressão.
+- Cobertura estatística e curadoria são distintas: a auditoria fora da pasta publicada conserva 195 registros de fonte; um tem `available: false` por decisão editorial. Não há preenchimento artificial nem reatribuição dos dados excluídos.
+- Regiões M49: África 54, Américas 35, Ásia 47, Europa 44, Oceania 14. Os metadados cobrem exatamente os 194 países ativos.
+- `computer.js`, `difficulty.js`, `rules.js`, `selection.js`, `engine.js`, `indicators.js` e `styles.css` ficaram byte a byte iguais. Mesma paleta, tipografia, componentes e inteligência: pesos 70/25/5, incerteza 0,15 e escolha anterior à seleção adversária.
 
 ## Testes automatizados
 
-`node scripts/test.mjs` passou, incluindo:
+`node scripts/test.mjs` passou:
 
-- 600 partidas completas: 200 por modo, com 12 rodadas, cada indicador/objetivo exatamente uma vez, 24 países distintos, 12 cartas por lado, descarte, reposição, empates e resultado final.
-- Fácil: 12 cartas iniciais e qualquer restante selecionável; Normal: até três cartas com valores acessíveis; Difícil: identidades sem números antes da revelação. Reserva permanece não jogável e sem números na visão do Normal/Difícil.
-- Normal mantém exatamente seis conhecidos e seis menos conhecidos em cada baralho. O Difícil continua utilizando o banco mundial sem filtro de familiaridade.
-- 120 pares de partidas (240 jogos adicionais) alteraram escolhas e valores do jogador sem mudar a sequência de decisões do computador. Nenhum novo sorteio ou avaliação entre escolha do jogador e revelação.
-- 30.000 escolhas ponderadas, incerteza real em valores próximos, configurações congeladas, entradas protegidas e mão final de duas/uma carta.
-- Empates em todos os indicadores e ambos os objetivos, inclusive em 36 rodadas dos templates reais: nenhum vencedor verde, zero pontos e resultado empatado.
-- Renderização das 195 cartas de estudo e conferência dos 1.170 valores contra o catálogo canônico; ano, projeção e seis indicadores presentes.
-- Busca sem acentos/maiúsculas, palavras combinadas, filtros geográficos, interseção vazia e entrada de pesquisa sem execução de conteúdo.
-- Comparações Brasil/Japão, Vaticano/Índia, Togo/Turquia e Brasil/Brasil, sem vencedores ou pontos; seis definições; fechamento correto de diálogo sobreposto; bloqueio do catálogo durante partida sem confirmação de encerramento.
+- 600 partidas completas, 200 por modo: bancos 36/60/194, 24 países distintos, 12 cartas por lado, 12 rodadas equilibradas, reposição, descarte, pontuação e resultado final. Todos os países disponíveis foram sorteados no conjunto de testes; Israel nunca aparece.
+- Normal sempre com seis conhecidos e seis menos conhecidos por lado; reserva não jogável e sem números na visão Normal/Difícil. Fácil mantém todas as cartas restantes disponíveis.
+- 120 pares de partidas (240 jogos) alterando escolhas e valores adversários sem alterar a decisão do computador; nenhuma reavaliação depois da seleção.
+- 1.000 regressões exatas da IA, 30.000 escolhas ponderadas, entradas restritas, imprecisão real, parâmetros configuráveis e fim de partida com duas/uma carta.
+- 36 rodadas de empate nos templates reais: zero pontos e ausência de destaque vencedor. Todos os indicadores e objetivos também foram testados no motor.
+- Em todas as 12 rodadas do template Normal, cada carta possui seis rótulos, seis números/unidades, destaque atual e nenhuma seção recolhível.
+- 194 cartas de estudo e todos os 1.164 números conferidos; paridade JSON/JS/CSV, fontes brutas WPP, bandeiras, pesquisa sem acentos, filtros combinados, seis explicações, comparação neutra e proteção de navegação durante partida.
 
-Os testes de templates usam um DOM mínimo em Node, de forma complementar à validação real no navegador. O fixture de empate nunca entra nos arquivos de dados publicados.
+Os testes de templates usam um DOM mínimo em Node e complementam o navegador real. Fixtures de empate não entram na publicação.
 
-## Navegador: computador e celular
+## Navegador em computador e celular
 
-Seis novas partidas completas / **72 rodadas** — uma por modo em cada tamanho — foram registradas em `ui-results.json`. Foram solicitados viewports de 1366 × 900, 390 × 844 e 320 × 720; a largura útil foi medida no DOM, incluindo um cenário de cerca de 277 px devido à escala e à barra de rolagem do navegador.
+Seis partidas completas novas, uma por modo em cada tamanho, totalizaram **72 rodadas**. Viewports solicitados: 1366 × 900 e 390 × 844; teste adicional do Normal em 320 × 720. O tamanho útil foi medido no DOM e chegou a 277 px no cenário mais estreito devido à escala/barra do navegador. São testes de viewport, não de aparelho físico.
 
-Verificado em todas as rodadas: número e indicador corretos, seis objetivos MAIOR e seis MENOR, seleção habilitada entre cartas legais, valores atuais iguais aos do catálogo nos modos visíveis, ausência de números nas cartas ocultas do Difícil, descarte sem repetição, pontuação, vencedor verde conforme a regra, seis indicadores após a revelação, botão de avanço e resultado após 12 rodadas.
+Em todas as rodadas: escolha legal, objetivo/indicador, seis MAIOR e seis MENOR, 24 descartes distintos, pontuação e vencedor corretos, ausência de Israel e conclusão da partida. Os valores visíveis foram conferidos com o catálogo local. No Normal, os outros cinco indicadores tinham conteúdo renderizado visível antes e depois de escolher a carta, sem abrir qualquer painel; no Difícil não havia números antes da revelação. Os seis indicadores das duas cartas reveladas continuam consultáveis.
 
-Verificado ainda:
+Também passaram:
 
-- Fácil móvel com 12 cartas em duas colunas; um número focal por carta; expansão dos outros cinco sem selecionar a carta; usadas retiradas da seleção.
-- Normal com três números focais antes da escolha e cinco indicadores expansíveis por carta; reserva não jogável.
-- Meu baralho com 12 países, três na mão e nove na reserva ao iniciar Normal/Difícil, sem números da reserva ou controles para jogá-la.
-- Menu de saída informa que encerra a partida e não salva o progresso. Continuar preserva o jogo; Encerrar e abrir Baralho entra no catálogo somente após encerrar.
-- Navegação Jogar / Baralho / Sobre o projeto; tutorial reaberto em Como jogar, com três passos e três valores reais no exemplo de escolha, ajuda do indicador e retorno correto.
-- Pesquisa `japao`, pesquisa com acento, filtro combinado sem resultado, limpeza e contagem dos cinco grupos geográficos no navegador.
-- Carta detalhada com seis valores, incluindo fecundidade de Togo `4,121673`; explicação sobreposta sem fechar a carta.
-- Comparação de grandes populações Índia/China com os valores completos lado a lado no celular; sem rolagem horizontal e sem verde de vencedor.
-- Uso por cliques e teclado, controles de formulário nativos, foco visível e diálogos com nomes acessíveis. Preservada a animação de 400 ms e a alternativa CSS para movimento reduzido; a preferência do sistema do usuário não foi alterada para o teste.
-- Console final sem erros ou avisos da aplicação. A prévia precisou ser restabelecida uma vez durante o trabalho; não houve alteração dos dados por isso.
+- Normal estreito: três cartas, 18 números/unidades presentes e visíveis, sem rolagem horizontal; destaque do indicador atual preservado.
+- Meu baralho: 12 identidades, três na mão, nove na reserva; nenhum número ou controle de jogada dentro da consulta. Cancelar saída preserva seleção; encerrar abre o catálogo com aviso de perda de progresso.
+- Catálogo com 194 cartas e 194 opções por comparador; busca Israel retorna 0 de 194. Todos os cinco filtros têm a contagem esperada. Página Sobre não inclui Israel nas listas disponíveis.
+- Noruega com sua própria bandeira e seis valores originais; definição sobreposta fecha sem fechar a carta.
+- Comparação Índia/China no celular: seis linhas, 12 valores e nenhuma rolagem horizontal; sem pontuação/classificação.
+- Tutorial interativo reaberto em Como jogar e concluído; instruções do Normal atualizadas.
+- Console sem erros ou avisos da aplicação.
 
-Evidências atuais: imagens `atlas-*` nesta pasta e `atlas-catalog-results.json`. Os testes móveis são de viewport e não de aparelho físico.
+Registros: `ui-results.json`, `atlas-catalog-results.json` e imagens `ajustes-*`. Evidências `atlas-*` e relatórios históricos de outras revisões não representam a contagem atual.
 
-## Equilíbrio repetido
+## Simulações
 
-`node scripts/simulate-balance.mjs` passou: **60.000 partidas / 720.000 rodadas**, 5.000 por modo/perfil. Fácil e Difícil reproduzem exatamente os resultados da revisão anterior com as mesmas sementes. No Normal os modelos passam a usar leitura dos valores disponíveis; o perfil que escolhe o melhor valor atual venceu 64,24% das partidas, contra 56,26% no modelo anterior com conhecimento impreciso. Isso compara modelos, não prevê o desempenho de pessoas reais. Não houve ajuste do robô para buscar 50%.
+`node scripts/simulate-balance.mjs` concluiu **60.000 partidas / 720.000 rodadas**, com 5.000 por combinação de modo e perfil. Nenhuma mudança na IA ou calibração para obter 50%. Como os bancos mudaram, as taxas foram recalculadas.
 
-Taxas completas, empates, pontos médios e hipóteses estão em `EQUILIBRIO.md` e `balance-results.json`. Nenhum perfil consulta o adversário oculto ou as regras futuras.
+No Normal, o computador venceu 79,76% contra seleção aleatória, 56,26% contra o perfil básico, 38,74% contra o intermediário e 17,40% contra o perfil que escolhe o melhor valor atual. Empates são contados separadamente. Os modelos consultam apenas as informações permitidas da própria mão; não preveem o desempenho de pessoas reais. Relatório completo em `EQUILIBRIO.md` e `balance-results.json`.
 
-## Entrega
+## Aprovação e publicação
 
-A prévia desta revisão é local e destinada a teste no Work. O catálogo e as partidas continuam estáticos, sem API externa durante uso. O mesmo PR #2 recebe novos commits, preservando histórico, workflow, pasta publicada e endereço público. A integração à main e a publicação dependem de aprovação explícita posterior.
+Os commits atualizam somente a branch existente e o PR #2. Histórico, configuração do Pages e workflow preservados. A main e o endereço público `https://gonzagao01.github.io/SuperTrunfoDEMO/` só serão atualizados após aprovação explícita posterior.
