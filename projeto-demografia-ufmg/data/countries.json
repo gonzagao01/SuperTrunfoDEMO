@@ -43,11 +43,18 @@
     "coverage": {
       "requestedMembers": 193,
       "requestedObservers": 2,
-      "includedMembers": 193,
+      "includedMembers": 192,
       "includedObservers": 2,
-      "countries": 195,
-      "values": 1170,
-      "excluded": []
+      "countries": 194,
+      "values": 1164,
+      "excluded": [
+        {
+          "id": "ISR",
+          "name": "Israel",
+          "type": "editorial",
+          "reason": "Exclusão editorial solicitada para o jogo; não indica ausência ou invalidade dos dados."
+        }
+      ]
     },
     "membershipSources": [
       {
@@ -1083,17 +1090,6 @@
       "infantMortality": 1.2449,
       "netMigration": 9.007,
       "medianAge": 35.9784
-    },
-    {
-      "id": "ISR",
-      "name": "Israel",
-      "flag": "il",
-      "population": 9387021,
-      "lifeExpectancy": 82.7268,
-      "fertility": 2.7847,
-      "infantMortality": 2.9392,
-      "netMigration": 1.13,
-      "medianAge": 29.2092
     },
     {
       "id": "ITA",
