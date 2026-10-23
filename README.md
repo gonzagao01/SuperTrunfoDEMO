@@ -1,72 +1,70 @@
-# Super Trunfo — Demografia UFMG — dificuldade normal
+# Super Trunfo — Demografia UFMG
 
-Atualização para aprovação na branch `atualizacao/dificuldade-normal` do repositório existente `gonzagao01/SuperTrunfoDEMO`. A branch `main` e a publicação permanecem na versão estável até aprovação explícita.
+Versão de revisão com três modos, banco local de 195 países e tutorial interativo. O visual GitHub Dark, os seis indicadores, as 12 rodadas e a pontuação foram preservados. **Esta branch não está aprovada para publicação.**
 
-## Testar
+- Branch: `atualizacao/tres-modos-mundial`, criada da `main` após a integração da versão anterior.
+- Site público preservado: https://gonzagao01.github.io/SuperTrunfoDEMO/
+- Diretório publicado: `projeto-demografia-ufmg/`.
+- O workflow `.github/workflows/deploy.yml` foi preservado; somente uma futura integração aprovada à `main` deverá publicar no mesmo endereço.
 
-Nesta pasta:
+## Executar localmente
+
+É um site estático, sem instalação de pacotes, backend ou consulta a APIs durante as partidas:
 
 ```sh
-python3 -m http.server 4181 --directory projeto-demografia-ufmg
+python3 -m http.server 4173 --directory projeto-demografia-ufmg
 ```
 
-Abra `http://localhost:4181`. Não há pacotes a instalar. Os dados e as 36 bandeiras são locais. O diretório `projeto-demografia-ufmg` contém apenas os arquivos do site. Documentação, testes e evidências ficam na raiz do repositório, fora da publicação.
+Abra http://127.0.0.1:4173/ no navegador. Também pode hospedar o conteúdo dessa pasta em um servidor estático. Os caminhos são relativos e compatíveis com a subpasta do GitHub Pages.
 
-## Alterações funcionais
+## Os três modos
 
-- Removida a classificação das cartas, seu cálculo e seus rótulos. Antes da confirmação, a carta mostra somente bandeira e nome. Nenhum valor de indicador é inserido no HTML ou nos atributos de acessibilidade nessa etapa.
-- O jogador continua escolhendo entre suas três cartas e pode mudar de escolha antes de confirmar. **Ver meu baralho** conserva nomes, bandeiras e estados dos 12 países. As cartas da reserva e as descartadas não podem ser jogadas.
-- O computador estima as próprias cartas para o indicador e o objetivo atuais, com arredondamento e incerteza. Sorteia a primeira, segunda ou terceira carta dessa ordem estimada com pesos iniciais de **70% / 25% / 5%**.
-- Sua escolha fica definida no início da rodada, antes de qualquer seleção do jogador. Trocas da escolha adversária não provocam nova avaliação.
-- Após a confirmação, os seis valores das duas cartas são revelados, com o indicador utilizado destacado.
-- Tutorial e Como jogar foram atualizados para refletir a mecânica. Cores, tipografia, disposição, cartas e demais componentes foram preservados; o CSS mudou somente para remover estilos dos rótulos e da explicação eliminados.
+| Modo | Banco | Escolha do jogador | Valores antes da disputa |
+| --- | ---: | --- | --- |
+| Fácil — Aprendizado | 36 | Qualquer carta própria ainda não usada, começando com 12 | Seis indicadores visíveis |
+| Normal — Estratégia | 60 | Mão de três; reposição da reserva | Ocultos |
+| Difícil — Desafio mundial | 195 | Mão de três; reposição da reserva | Ocultos |
 
-Permanecem: 36 países e 216 valores, sorteio de 24 países, 12 cartas por lado, mãos de três cartas enquanto houver reserva, 12 rodadas, cada indicador uma vez com MAIOR e uma com MENOR, um ponto por vitória, empate sem pontuação, descarte e resultado final. As duas últimas rodadas têm duas cartas e depois uma, pois todas as 12 cartas são usadas.
+Cada partida usa 24 países distintos, 12 por participante. No Normal são sorteados 12 de cada grupo editorial de 30 e distribuídos seis por grupo a cada lado. Cada indicador aparece uma vez com MAIOR e uma com MENOR, em ordem embaralhada. Vitória vale um ponto; empate, zero. A mão do computador tem sempre até três cartas, inclusive no Fácil. Nas duas últimas rodadas do Normal/Difícil restam duas e uma carta, pois não há mais reserva.
 
-## Configurar a dificuldade
+O robô preserva o algoritmo anterior em todos os modos: avalia aproximadamente os próprios valores, com arredondamento e ruído de incerteza 0,15, e sorteia com pesos 70/25/5 entre as estimativas ordenadas. Não calcula percentis nem chances estatísticas exatas. A escolha fica definida no início da rodada, antes de qualquer seleção do jogador. A função de decisão recebe apenas estimativas próprias e o objetivo público. Pesos e incerteza ficam em `difficulty.js`; são copiados e congelados no início da partida.
 
-Edite `projeto-demografia-ufmg/difficulty.js`:
+## Organização
 
-```js
-rankWeights: Object.freeze([0.70, 0.25, 0.05]),
-uncertainty: 0.15,
-```
+- `modes.js`: configurações e listas editoriais, sem duplicar dados demográficos.
+- `rules.js`: seis indicadores, sequência equilibrada, comparação e embaralhamento.
+- `selection.js`: bancos e distribuição por modo, sem ler números demográficos.
+- `computer.js` / `difficulty.js`: avaliação incerta e escolha ponderada, iguais no Normal e no Difícil.
+- `engine.js`: estado privado, mão/reserva/descarte, compromisso prévio do robô, pontuação e controle de revelação.
+- `indicators.js`: rótulos, unidades e explicações didáticas.
+- `app.js` / `styles.css`: interface e tutorial; animação de 400 ms com respeito a movimento reduzido.
+- `data/countries.json`: catálogo canônico, exportado também em JS e CSV.
+- `assets/flags/`: 195 bandeiras locais.
 
-Os três pesos se referem à ordem **estimada** da mão, não à chance de vitória nem à ordem real. Podem ser proporções ou pesos como `[70, 25, 5]`; são normalizados. Com duas cartas, os pesos restantes são renormalizados; se ambos forem zero, o sorteio é uniforme. Com uma carta, ela é obrigatória. As configurações são copiadas e congeladas ao iniciar cada partida.
+Como todo jogo inteiramente estático, os arquivos do catálogo são públicos. “Oculto” significa que a interface e o algoritmo de escolha não expõem nem consultam a escolha adversária antes da revelação; não constitui proteção contra inspeção manual dos arquivos pelo próprio usuário.
 
-A aproximação usa somente os valores do indicador atual nas próprias cartas. A população é transformada em escala logarítmica, para lidar com países de tamanhos muito diferentes. A escala de incerteza é o maior entre a amplitude da própria mão e 10% da maior magnitude, com arredondamento em passos de 10% dessa escala e ruído uniforme de até `uncertainty` vezes a escala para cada carta. Valores próximos podem trocar de posição na estimativa. A decisão ponderada também permite escolher cartas estimadas como menos favoráveis.
+## Dados, listas e validação
 
-A função de escolha recebe apenas IDs, estimativas e o objetivo público. Não recebe valores adversários, seleção do jogador, cartas da reserva, catálogo, regras futuras, percentis ou probabilidades exatas de vitória. A regra e o baralho são sorteados antes da primeira decisão do computador; os parâmetros de estratégia não influenciam o sorteio inicial.
+- [Fontes, cobertura e auditoria dos 195 países](qa/COBERTURA-E-FONTES.md).
+- [Listas definitivas por modo](qa/PAISES-POR-MODO.md).
+- [Simulações e suas hipóteses](qa/EQUILIBRIO.md).
+- [Verificação funcional e interface](qa/VALIDACAO.md).
 
-O motor mantém o estado privado em `WeakMap`. A visão da interface expõe apenas identidades antes da revelação e resultados já públicos depois dela. Como na versão anterior, o dataset acadêmico continua disponível nos arquivos locais; não se trata de ocultação criptográfica dos dados.
+Fonte: ONU, World Population Prospects 2024, referência 2024, cenário Medium, **projeções**. Há 1.170 valores; os 216 dos 36 países anteriores foram preservados integralmente. Togo utiliza a atualização intermediária oficial. Os 193 membros e os dois observadores têm seis campos válidos; nenhuma exclusão ou substituição foi necessária. A lista de membros e observadores acompanha o registro oficial da ONU. Consulte o relatório para fontes, unidades, observações sobre microestados e reprodução da importação.
 
-## Dataset preservado
+## Testes reproduzíveis
 
-Os arquivos de dados e as 36 bandeiras permanecem idênticos aos da versão aprovada. Fonte registrada no projeto: ONU, World Population Prospects 2024, cenário médio, referência 2024. Não houve nova extração, substituição, arredondamento ou alteração dos valores nesta atualização.
-
-SHA-256 de `countries.json`: `3cd1d5ebb4b148e37d9d0b150b15529d4a89cb51c0e3242c9fbf32d7868aa9bb`.
-
-## Testes e equilíbrio
+Requer apenas Node.js para executar os testes, sem dependências de pacotes:
 
 ```sh
 node scripts/test.mjs
 node scripts/simulate-balance.mjs
 ```
 
-O primeiro verifica dados, escolhas, privacidade, reposição, descarte, regras, pontuação, empates, conclusão, probabilidades e configurações. Inclui 200 partidas completas e 80 pares de partidas que variam escolhas e valores ocultos do adversário.
+O primeiro verifica fontes/formatos/bandeiras, 600 partidas completas, privacidade, distribuição, empates e regressão exata da IA anterior. O segundo executa 60.000 partidas / 720.000 rodadas nos três modos e quatro modelos de jogador, sem calibrar para obter 50% de vitórias. Os perfis são hipóteses de conhecimento, não previsões do desempenho de pessoas reais. Há registros estruturados em `qa/`.
 
-O segundo executa 20.000 partidas completas contra quatro modelos de conhecimento. Os resultados estão em `qa/EQUILIBRIO.md` e `qa/balance-results.json`. Contra escolhas aleatórias, o computador é forte; contra conhecimento básico, o desafio é moderado; o desempenho cai contra conhecimento mais elevado. Não houve ajuste para forçar 50% de vitórias. Esses modelos não substituem testes com pessoas.
+O snapshot `scripts/fixtures/normal-engine-v1.cjs` é usado somente como referência de regressão do algoritmo antigo, fora da pasta publicada. O fixture de números iguais nos testes serve somente para verificar empates; nunca modifica os dados do jogo.
 
-Veja `qa/VERIFICACAO.md` para a validação em navegador de computador e em larguras de celular. Esta versão deve ser aprovada antes de substituir arquivos do site público.
+## Publicação após aprovação
 
-## Publicação no mesmo endereço
-
-O único endereço público é https://gonzagao01.github.io/SuperTrunfoDEMO/. Esta atualização deve substituir a versão anterior nesse mesmo site, sem criar outro repositório ou site.
-
-- Desenvolvimento e revisão na branch `atualizacao/dificuldade-normal`.
-- Integrar à `main` somente após a aprovação do responsável. Não ativar integração automática.
-- Preservar `.github/workflows/deploy.yml`, as configurações do GitHub Pages e o histórico de commits.
-- Manter `projeto-demografia-ufmg` como diretório publicado pelo workflow existente.
-- A proposta retira desse diretório os relatórios, imagens e testes anteriores; a documentação e os testes atualizados ficam fora da publicação. Os dados e bandeiras são preservados exatamente.
-- Após a aprovação e a integração, aguardar o workflow existente e verificar no mesmo endereço o tutorial, as 12 rodadas, os valores ocultos/revelados, as bandeiras, as fontes, os downloads de dados e a experiência em tamanhos de computador e celular.
-- Para recuperação, reverter o commit de integração usando o histórico, sem apagar o repositório nem reescrever commits.
+Revisar o pull request desta branch. Somente após aprovação explícita, integrar à `main`, mantendo histórico e workflow existentes. Nenhum outro repositório, site ou endereço foi criado. A atualização usa a mesma pasta pública e não acrescenta testes ou relatórios ao diretório publicado.
