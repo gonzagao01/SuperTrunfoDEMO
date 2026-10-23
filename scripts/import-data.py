@@ -13,6 +13,9 @@ SOURCE='https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standa
 UPDATE='https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/WPP2024_CSV_files_update.zip'
 ALIASES={'Bahamas (The)':'BHS',"China (the People's Republic of)":'CHN',"Democratic People's Republic of Korea":'PRK','Gambia (Republic of The)':'GMB','Micronesia (Federated States of)':'FSM','Naoero':'NRU','Netherlands (Kingdom of the)':'NLD','United Kingdom of Great Britain and Northern Ireland':'GBR'}
 OVERRIDES={'GBR':'Reino Unido','PRK':'Coreia do Norte','IRN':'Irã','SAU':'Arábia Saudita','LAO':'Laos','MDA':'Moldávia','TLS':'Timor-Leste','PSE':'Estado da Palestina','VAT':'Santa Sé (Vaticano)','NRU':'Nauru (Naoero)','COD':'República Democrática do Congo','COG':'Congo'}
+# Game curation is separate from statistical completeness. Keep source evidence
+# for auditing, but never restore an editorially excluded country on re-import.
+EDITORIAL_EXCLUSIONS={'ISR':'Exclusão editorial solicitada para o jogo; não indica ausência ou invalidade dos dados.'}
 def digest(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def normalize(value): return ''.join(c for c in unicodedata.normalize('NFKD',value.lower()) if c.isalnum())
 def node(script,value=None):
@@ -59,14 +62,17 @@ def extract(cache):
                 values[key]=int(number)
             else:values[key]=float(number)
         name=previous.get(iso,{}).get('name') or OVERRIDES.get(iso) or display[iso]
-        registry.append({'id':iso,'name':name,'unName':members.get(iso) or observers[iso],'wppName':row['Location'] if row else None,'flag':row['ISO2_code'].lower() if row else None,'status':'member' if iso in members else 'observer','complete':not missing,'missing':missing})
+        registry.append({'id':iso,'name':name,'unName':members.get(iso) or observers[iso],'wppName':row['Location'] if row else None,'flag':row['ISO2_code'].lower() if row else None,'status':'member' if iso in members else 'observer','complete':not missing,'missing':missing,'available':not missing and iso not in EDITORIAL_EXCLUSIONS})
         if missing:
             excluded.append({'id':iso,'name':name,'missing':missing,'alternative':'Fora do sorteio até validar uma série compatível para os seis indicadores; não preencher com zeros.'});continue
         assert values['population']>0 and 0<values['lifeExpectancy']<130 and 0<=values['fertility']<15 and 0<=values['infantMortality']<=1000 and 0<values['medianAge']<100
         card={'id':iso,'name':name,'flag':row['ISO2_code'].lower(),**values}
         if iso in previous:assert card==previous[iso],f'Previously validated values changed: {iso}'
-        countries.append(card)
         proof.append({'id':iso,'source':'interim-update' if iso=='TGO' else 'main-medium','Time':row['Time'],'Variant':row['Variant'],**{col:row[col] for col in FIELDS.values()}})
+        if iso in EDITORIAL_EXCLUSIONS:
+            excluded.append({'id':iso,'name':name,'type':'editorial','reason':EDITORIAL_EXCLUSIONS[iso]})
+            continue
+        countries.append(card)
     countries.sort(key=lambda c:normalize(c['name']))
     lists=node("const m=require('./projeto-demografia-ufmg/modes.js');process.stdout.write(JSON.stringify({easy:m.EASY_IDS,normalKnown:m.KNOWN_IDS,normalLessKnown:m.LESS_KNOWN_IDS}));")
     included={c['id'] for c in countries}

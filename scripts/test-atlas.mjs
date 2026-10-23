@@ -7,14 +7,16 @@ const require=createRequire(import.meta.url),engine=require('../projeto-demograf
 const modes=require('../projeto-demografia-ufmg/modes.js'),indicators=require('../projeto-demografia-ufmg/indicators.js'),atlas=require('../projeto-demografia-ufmg/atlas.js');
 const read=path=>readFileSync(new URL(path,import.meta.url),'utf8');
 const data=JSON.parse(read('../projeto-demografia-ufmg/data/countries.json')),geo=JSON.parse(read('../projeto-demografia-ufmg/data/geography.json'));
-assert.equal(createHash('sha256').update(read('../projeto-demografia-ufmg/data/countries.json')).digest('hex'),'6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5','The approved 1170 values and metadata must remain byte-identical');
+assert.equal(createHash('sha256').update(read('../projeto-demografia-ufmg/data/countries.json')).digest('hex'),'8d883b71d395a5bf58a86c8a58a1320d1250e6e7740da69ea8b25a668a30bb4e','The reviewed 194-country dataset must remain byte-identical');
 assert.deepEqual(JSON.parse(read('../projeto-demografia-ufmg/data/geography.js').split('window.DEMOGRAPHY_GEOGRAPHY = ')[1].trim().slice(0,-1)),geo);
-assert.equal(Object.keys(geo.countryRegions).length,195);
-const counts={'002':54,'019':35,'142':48,'150':44,'009':14};
+assert.equal(Object.keys(geo.countryRegions).length,194);
+const counts={'002':54,'019':35,'142':47,'150':44,'009':14};
 for(const [region,count]of Object.entries(counts))assert.equal(atlas.filterCountries(data.countries,geo,{region}).length,count);
 for(const card of data.countries)assert.ok(Object.hasOwn(geo.regions,geo.countryRegions[card.id]));
 assert.equal(geo.countryRegions.RUS,'150');assert.equal(geo.countryRegions.TUR,'142');assert.equal(geo.countryRegions.VAT,'150');assert.equal(geo.countryRegions.PSE,'142');
-assert.equal(atlas.filterCountries(data.countries,geo).length,195);
+assert.equal(atlas.filterCountries(data.countries,geo).length,194);
+assert.equal(geo.countryRegions.ISR,undefined);
+assert.equal(atlas.filterCountries(data.countries,geo,{query:'Israel'}).length,0);
 assert.deepEqual(atlas.filterCountries(data.countries,geo,{query:'  JAPAO  '}).map(c=>c.id),['JPN']);
 assert.deepEqual(atlas.filterCountries(data.countries,geo,{query:'coreia sul',region:'142'}).map(c=>c.id),['KOR']);
 assert.equal(atlas.filterCountries(data.countries,geo,{query:'Brasil',region:'150'}).length,0);
@@ -40,7 +42,9 @@ function harness(mode='normal'){
  return {app,dialogs,node,click,change};
 }
 const h=harness();h.click({action:'atlas'});
-assert.equal((h.app.innerHTML.match(/class="catalog-country"/g)||[]).length,195);
+assert.equal((h.app.innerHTML.match(/class="catalog-country"/g)||[]).length,194);
+assert.doesNotMatch(h.app.innerHTML,/Israel|value="ISR"|data-country="ISR"/);
+h.click({country:'ISR'});assert.equal(h.dialogs.length,0);
 assert.match(h.app.innerHTML,/id="country-search"/);assert.match(h.app.innerHTML,/id="country-region"/);
 const full=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:6}),integer=new Intl.NumberFormat('pt-BR');
 for(const country of data.countries){
@@ -73,5 +77,5 @@ assert.equal(playing.app.innerHTML,initial);assert.match(playing.dialogs.at(-1).
 assert.match(playing.dialogs.at(-1).innerHTML,/Encerrar e abrir Baralho/);assert.doesNotMatch(playing.app.innerHTML,/catalog-grid/);
 playing.click({action:'close-dialog'});assert.equal(playing.app.innerHTML,initial);
 playing.click({action:'leave'});playing.click({action:'end-atlas'});assert.match(playing.app.innerHTML,/class="catalog-grid"/);
-console.log('PASS: 195 country cards / all 1170 catalogue values match the game; 5 official regions, accent-insensitive search and combined filters.');
+console.log('PASS: 194 country cards / all 1164 catalogue values match the game; 5 official regions, accent-insensitive search and combined filters.');
 console.log('PASS: six indicator explanations, nested-dialog close, neutral comparison (including identical countries), no in-game catalogue bypass or silent progress loss.');

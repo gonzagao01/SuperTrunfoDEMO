@@ -22,6 +22,16 @@ for(const mode of Object.keys(modes.MODES)){
   for(let round=0;round<12;round++){
     assert.match(app.innerHTML,new RegExp(`Rodada ${round+1} de 12`));
     assert.equal((app.innerHTML.match(/class="indicator-value"/g)||[]).length,mode==='hard'?0:(mode==='easy'?12-round:Math.min(3,12-round))*5);
+    if(mode==='normal'){
+      const cards=app.innerHTML.match(/<article class="learning-card[^]*?<\/article>/g);
+      for(const card of cards){
+        assert.equal((card.match(/data-indicator=/g)||[]).length,6);
+        assert.equal((card.match(/class="indicator-unit"/g)||[]).length,6);
+        assert.match(card,/class="active-card-value"/);
+        assert.match(card,/class="other-indicators permanent-indicators"/);
+        assert.doesNotMatch(card,/<details|<summary/,'Normal indicators must stay visible without opening a panel');
+      }
+    }
     const id=app.innerHTML.match(/data-card="([A-Z]{3})"/)[1];click(null,id);click('confirm');
     assert.match(app.innerHTML,/Empate\. Nenhum ponto nesta rodada/);assert.match(app.innerHTML,/Ninguém recebe ponto/);
     assert.equal((app.innerHTML.match(/class="compared-value"/g)||[]).length,2);

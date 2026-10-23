@@ -10,14 +10,16 @@ const dataset=JSON.parse(load('../projeto-demografia-ufmg/data/countries.json'))
 const byId=new Map(catalog.map(card=>[card.id,card]));
 const previous=JSON.parse(load('fixtures/original-36.json'));
 const registry=JSON.parse(load('fixtures/un-register.json'));
-assert.equal(catalog.length,195);assert.equal(byId.size,195);assert.equal(catalog.length*engine.KEYS.length,1170);
+assert.equal(catalog.length,194);assert.equal(byId.size,194);assert.equal(catalog.length*engine.KEYS.length,1164);
 for(const card of previous.countries)assert.deepEqual(byId.get(card.id),card,'All previous 216 numeric values and identities must remain exact');
 assert.equal(dataset.metadata.year,2024);assert.equal(dataset.metadata.status,'projection');
 assert.equal(dataset.metadata.sourceSha256,'286ac36bb1415e2e1ade03acfef0a29f0e4c087e2f78e38c48f50c5df89082bc');
-assert.deepEqual(dataset.metadata.coverage,{requestedMembers:193,requestedObservers:2,includedMembers:193,includedObservers:2,countries:195,values:1170,excluded:[]});
+assert.deepEqual(dataset.metadata.coverage,{requestedMembers:193,requestedObservers:2,includedMembers:192,includedObservers:2,countries:194,values:1164,excluded:[{id:'ISR',name:'Israel',type:'editorial',reason:'Exclusão editorial solicitada para o jogo; não indica ausência ou invalidade dos dados.'}]});
 assert.equal(registry.filter(row=>row.status==='member').length,193);
 assert.deepEqual(registry.filter(row=>row.status==='observer').map(row=>row.id).sort(),['PSE','VAT']);
-assert.ok(registry.every(row=>row.complete&&row.missing.length===0&&byId.has(row.id)));
+assert.ok(registry.every(row=>row.complete&&row.missing.length===0&&row.available===byId.has(row.id)));
+for(const row of registry.filter(row=>row.available)){assert.equal(byId.get(row.id).name,row.name);assert.equal(byId.get(row.id).flag,row.flag);}
+assert.deepEqual(registry.filter(row=>!row.available).map(row=>row.id),['ISR']);
 for(const card of catalog){
   for(const key of engine.KEYS)assert.ok(Number.isFinite(card[key]),`${card.id}: ${key}`);
   assert.ok(card.population>0&&Number.isInteger(card.population));assert.match(card.flag,/^[a-z]{2}$/);
@@ -45,14 +47,17 @@ const sourceColumns=['TPopulation1July','LEx','TFR','IMR','CNMR','MedianAgePop']
 const sourceRows=csv(load('fixtures/wpp-2024-source-rows.csv'));assert.equal(sourceRows.length,195);
 for(const row of sourceRows){
   assert.equal(row.Time,'2024');assert.equal(row.Variant,'Medium');
+  if(row.id==='ISR'){assert.ok(!byId.has(row.id));continue;}
   engine.KEYS.forEach((key,index)=>assert.ok(Math.abs(Number(row[sourceColumns[index]])*(index===0?1000:1)-byId.get(row.id)[key])<1e-6));
   assert.equal(row.source,row.id==='TGO'?'interim-update':'main-medium');
 }
 assert.equal(byId.get('TGO').population,8406558);assert.equal(byId.get('TGO').fertility,4.121673);
+assert.ok(!byId.has('ISR'));assert.ok(!existsSync(new URL('../projeto-demografia-ufmg/assets/flags/il.svg',import.meta.url)));
+assert.ok(modes.EASY_IDS.includes('NOR')&&modes.KNOWN_IDS.includes('NOR'));
 assert.equal(modes.EASY_IDS.length,36);assert.equal(modes.KNOWN_IDS.length,30);assert.equal(modes.LESS_KNOWN_IDS.length,30);
 assert.equal(new Set([...modes.KNOWN_IDS,...modes.LESS_KNOWN_IDS]).size,60);
 assert.deepEqual(modes.KNOWN_IDS,modes.EASY_IDS.filter(id=>!['PER','CUB','PRK','SAU','THA','KEN'].includes(id)));
-for(const [mode,count]of [['easy',36],['normal',60],['hard',195]])assert.equal(selection.pool(catalog,mode).length,count);
+for(const [mode,count]of [['easy',36],['normal',60],['hard',194]])assert.equal(selection.pool(catalog,mode).length,count);
 assert.deepEqual(selection.pool(catalog,'hard'),catalog);assert.equal(modes.MODES.hard.bankIds,null);
 assert.ok(Object.values(modes.MODES).every(Object.isFrozen));
 function seeded(seed){return ()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return ((t^t>>>14)>>>0)/4294967296;};}
@@ -173,10 +178,10 @@ assert.throws(()=>engine.createGame([...catalog,catalog[0]]));
 assert.throws(()=>engine.createGame(catalog.map((card,i)=>i===0?{...card,fertility:null}:card)));
 assert.equal(JSON.stringify(dataset),original);
 for(const file of ['app.js','engine.js','styles.css','difficulty.js','modes.js','computer.js','selection.js'])assert.doesNotMatch(load(`../projeto-demografia-ufmg/${file}`),/rarit|raridad|\bComum\b|\bRara\b|Épica/i);
-const html=load('../projeto-demografia-ufmg/index.html');for(const file of ['atlas','modes','indicators','rules','selection','difficulty','computer','engine','app'])assert.ok(html.includes(`${file}.js?v=20261023-atlas`));
-const summary={fullGames:600,pairedPrivacyGames:240,legacyHands:1000,rankDraws:30000,frequencies,sampledPools:sampled,sourceRows:195,values:1170,previousValuesPreserved:216};
+const html=load('../projeto-demografia-ufmg/index.html');for(const file of ['atlas','modes','indicators','rules','selection','difficulty','computer','engine','app'])assert.ok(html.includes(`${file}.js?v=20261023-final`));
+const summary={fullGames:600,pairedPrivacyGames:240,legacyHands:1000,rankDraws:30000,frequencies,sampledPools:sampled,sourceRows:195,activeCountries:194,values:1164,previousValuesPreserved:216};
 writeFileSync(new URL('../qa/test-results.json',import.meta.url),JSON.stringify(summary,null,2)+'\n');
-console.log('PASS: 195 countries / 1170 verified source values; all previous 36 countries exact; 195 safe local flags; CSV/JS/JSON parity.');
+console.log('PASS: 194 countries / 1164 verified source values; all previous 36 countries exact; 194 safe local flags; CSV/JS/JSON parity.');
 console.log('PASS: 600 complete games in all modes; exact pools, Normal 6+6 each side, Easy all 12 accessible, 12 balanced rounds, 24 unique discards.');
 console.log('PASS: 120 paired matches (240 games) isolate hidden opposing choices/values; no AI reconsideration after selection.');
 console.log('PASS: 1000 legacy AI regressions, guarded inputs, real uncertainty, configurable 70/25/5, 2/1-card endgame, frozen settings.');
