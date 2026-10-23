@@ -58,10 +58,15 @@ assert.ok(Object.values(modes.MODES).every(Object.isFrozen));
 function seeded(seed){return ()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return ((t^t>>>14)>>>0)/4294967296;};}
 function schedule(rules){assert.equal(rules.length,12);for(const indicator of engine.KEYS)for(const objective of ['higher','lower'])assert.equal(rules.filter(rule=>rule.indicator===indicator&&rule.objective===objective).length,1);}
 function privacy(view){
-  for(const card of [...view.playerHand,...view.roundHand,...view.playerDeck]){
+  for(const card of [...view.playerHand,...view.roundHand]){
     if(view.mode.visibleValues){for(const key of engine.KEYS)assert.equal(card[key],byId.get(card.id)[key]);}
     else {assert.ok(Object.keys(card).every(key=>['id','name','flag','status'].includes(key)));for(const key of engine.KEYS)assert.equal(card[key],undefined);}
     assert.equal(card.estimate,undefined);assert.equal(card.rarity,undefined);
+  }
+
+  for(const card of view.playerDeck){
+    if(view.mode.fullDeckSelection){for(const key of engine.KEYS)assert.equal(card[key],byId.get(card.id)[key]);}
+    else {assert.ok(Object.keys(card).every(key=>['id','name','flag','status'].includes(key)));for(const key of engine.KEYS)assert.equal(card[key],undefined);}
   }
   for(const key of ['computerHand','computerChoiceId','computerDeck','computerReserve','playerReserve','rounds','difficulty','estimates','random'])assert.equal(view[key],undefined,key);
 }
@@ -168,7 +173,7 @@ assert.throws(()=>engine.createGame([...catalog,catalog[0]]));
 assert.throws(()=>engine.createGame(catalog.map((card,i)=>i===0?{...card,fertility:null}:card)));
 assert.equal(JSON.stringify(dataset),original);
 for(const file of ['app.js','engine.js','styles.css','difficulty.js','modes.js','computer.js','selection.js'])assert.doesNotMatch(load(`../projeto-demografia-ufmg/${file}`),/rarit|raridad|\bComum\b|\bRara\b|Épica/i);
-const html=load('../projeto-demografia-ufmg/index.html');for(const file of ['modes','indicators','rules','selection','difficulty','computer','engine','app'])assert.ok(html.includes(`${file}.js?v=20261023-modos`));
+const html=load('../projeto-demografia-ufmg/index.html');for(const file of ['atlas','modes','indicators','rules','selection','difficulty','computer','engine','app'])assert.ok(html.includes(`${file}.js?v=20261023-atlas`));
 const summary={fullGames:600,pairedPrivacyGames:240,legacyHands:1000,rankDraws:30000,frequencies,sampledPools:sampled,sourceRows:195,values:1170,previousValuesPreserved:216};
 writeFileSync(new URL('../qa/test-results.json',import.meta.url),JSON.stringify(summary,null,2)+'\n');
 console.log('PASS: 195 countries / 1170 verified source values; all previous 36 countries exact; 195 safe local flags; CSV/JS/JSON parity.');
@@ -179,3 +184,4 @@ console.log('PASS: ties for every indicator and both objectives in all modes, si
 console.log(JSON.stringify(summary));
 
 await import("./test-render.mjs");
+await import("./test-atlas.mjs");

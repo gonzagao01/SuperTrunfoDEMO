@@ -14,14 +14,14 @@ for(const mode of Object.keys(modes.MODES)){
   const listeners={},app={innerHTML:'',addEventListener(type,callback){listeners[type]=callback;},querySelector(){return {setAttribute(){},focus(){}};}};
   const tied={...data,countries:data.countries.map(card=>({...card,...Object.fromEntries(engine.KEYS.map(key=>[key,1]))}))};
   const document={getElementById(){return app;},title:''};
-  const window={DemographyEngine:engine,DEMOGRAPHY_DATA:tied,DemographyIndicators:indicators,DemographyModes:modes,scrollTo(){}};
+  const window={DemographyEngine:engine,DEMOGRAPHY_DATA:tied,DemographyIndicators:indicators,DemographyModes:modes,DEMOGRAPHY_GEOGRAPHY:JSON.parse(readFileSync(new URL('../projeto-demografia-ufmg/data/geography.json',import.meta.url))),DemographyAtlas:require('../projeto-demografia-ufmg/atlas.js'),scrollTo(){}};
   const localStorage={getItem(key){return key.includes('tutorial')?'1':mode;},setItem(){}};
   vm.runInNewContext(source,{window,document,localStorage,Intl,console});
   const click=(action,id)=>listeners.click({target:{closest(selector){if(selector==='.tutorial-dialog')return null;if(selector==='[data-card]')return id?{dataset:{card:id}}:null;if(selector==='[data-action]')return action?{dataset:{action}}:null;return null;}}});
   click('play');
   for(let round=0;round<12;round++){
     assert.match(app.innerHTML,new RegExp(`Rodada ${round+1} de 12`));
-    assert.equal((app.innerHTML.match(/class="indicator-value"/g)||[]).length,mode==='easy'?(12-round)*6:0);
+    assert.equal((app.innerHTML.match(/class="indicator-value"/g)||[]).length,mode==='hard'?0:(mode==='easy'?12-round:Math.min(3,12-round))*5);
     const id=app.innerHTML.match(/data-card="([A-Z]{3})"/)[1];click(null,id);click('confirm');
     assert.match(app.innerHTML,/Empate\. Nenhum ponto nesta rodada/);assert.match(app.innerHTML,/Ninguém recebe ponto/);
     assert.equal((app.innerHTML.match(/class="compared-value"/g)||[]).length,2);
