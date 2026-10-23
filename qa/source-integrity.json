@@ -1,0 +1,1260 @@
+{
+  "baseMainCommit": "4693621d19b8015ad8f0a458934084ca51e6f97d",
+  "branch": "atualizacao/tres-modos-mundial",
+  "publishedFiles": [
+    {
+      "path": "projeto-demografia-ufmg/app.js",
+      "bytes": 23281,
+      "sha256": "d471b3396c8204745b6cb14511cf16ffd49ae9bad28ae08b9069af42a2a03d22",
+      "gitBlobSha": "46696f8ec52bff516e324dd4f871cc726916b36d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/favicon.svg",
+      "bytes": 286,
+      "sha256": "3d37b01b84b51314db52bbeb99ba0290da8c42778282505f4a1740fc418c6b2c",
+      "gitBlobSha": "944e02ac35ed61f523fefc86cb6e39ca06da8c98"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ad.svg",
+      "bytes": 54926,
+      "sha256": "e2cf35be958f3b581660085c0d9b768610f476c486a3d23798f62187fffa270f",
+      "gitBlobSha": "655fc8a224b802ca7b124f2534a74d88469cf663"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ae.svg",
+      "bytes": 228,
+      "sha256": "8db8bfc3d1a711967e44fbe237a52d75cd03a3dfbcefc9d78febd61c2973915e",
+      "gitBlobSha": "92be1ebdda9d8fde04dba07c7eda0f9d1d8919ea"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/af.svg",
+      "bytes": 222005,
+      "sha256": "adebcd50e61dd0e3c83c689f5e3c7f6ca5055ca5f4a54119e27bf9e8df7e5421",
+      "gitBlobSha": "d9e49f9ac5306b64411ba590b1b9be75e7c661f4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ag.svg",
+      "bytes": 483,
+      "sha256": "73f382e91c9e9ba8e786696f20011a04c7e22354e37db61921f2c57645ec7385",
+      "gitBlobSha": "f60599e96824b85c1a3bd347287f9aabbe2b6a23"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/al.svg",
+      "bytes": 9425,
+      "sha256": "173ec6b28100ddbaeb011b73b4776e50fc2545e14c81ad65e25c19b7137788be",
+      "gitBlobSha": "f8d555026bb012fa518a7e49b43d667994d2e358"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/am.svg",
+      "bytes": 201,
+      "sha256": "1eb2190d967efac59bb4f18f699b465f76dc3128593011e59243450cd593f846",
+      "gitBlobSha": "1e74af0f0b45380931f555080051a739bedcf15e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ao.svg",
+      "bytes": 2225,
+      "sha256": "0f10545c2991c7ad5332dff881c0e176de0a021260e722af7cfdd996ce9b497e",
+      "gitBlobSha": "6384b4463881811e3053436925e11c197a3e2303"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ar.svg",
+      "bytes": 4003,
+      "sha256": "0828d651a95f39cea1e5d9d2ee30ec4dbcf55d70bdea39c89ec80c83226ad86d",
+      "gitBlobSha": "db54af5974814d631f6629ce4aae5d7836962682"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/at.svg",
+      "bytes": 154,
+      "sha256": "5c5bded6c58d94069f75d61049773930b8a23aa2a73a17355f622c6ce40090dc",
+      "gitBlobSha": "1229a26cf8b8804bfa6e6a287f9ac66172eb36a2"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/au.svg",
+      "bytes": 1307,
+      "sha256": "b826e039804d5cf313bd7e22a40ea2239e8e22ddba7c19a8787dfaad1dda71aa",
+      "gitBlobSha": "38a47dee05d06e4aad8f470528ec66cf3bd397ef"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/az.svg",
+      "bytes": 519,
+      "sha256": "963c074ace679c88a77f6a5db3bd0f3b98a169dae5ebd12abb6293ecda497280",
+      "gitBlobSha": "f88d08033030ed80a03877386e798c15330a72b5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ba.svg",
+      "bytes": 437,
+      "sha256": "1c83a2cf7e8366afb9d724f896902ec46a722739538349d6f41b0953d47f171f",
+      "gitBlobSha": "177c78d3a4da8e95a7fa78d529e992766c9eac1c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bb.svg",
+      "bytes": 606,
+      "sha256": "b38fe14e1e967ea658331d386e8028c5a02d2de70c8376b06deda6ea77a4938b",
+      "gitBlobSha": "820297aa6a340f88c1cfab42280bce453fc416ad"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bd.svg",
+      "bytes": 150,
+      "sha256": "b509e5c29b8c32761c273449647d5a35c5301227b27ee786d353be7916bfddaf",
+      "gitBlobSha": "8cf230bfaf65a22c2fb08094bac9eb9cab86254a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/be.svg",
+      "bytes": 182,
+      "sha256": "95933c385c9e72479ec7e63f6cbca50d07695fd2e41fab334ea549c20b234fd1",
+      "gitBlobSha": "107b639af7cb50cabb778ec4a4fe52ce23d7f2b0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bf.svg",
+      "bytes": 568,
+      "sha256": "4c88dba85dcf8f799607e2ce32f5af58741ccd31f15fb917bf89f58a140f91a4",
+      "gitBlobSha": "3a649ae80f7123c3771aa5bb77fd61c4efc1510f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bg.svg",
+      "bytes": 201,
+      "sha256": "829c1f5f6f403632fd4710b8b7f3a313408e5285e4540af97950408ff9a5abfe",
+      "gitBlobSha": "541c9e535bf7dc4efb29ac0c2b6ad44731fef647"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bh.svg",
+      "bytes": 218,
+      "sha256": "4cb584ef406f6bc57ea9c935db43890b9719ae126fe1ad4fb10890709978162b",
+      "gitBlobSha": "5ec75602a7b4b06abf7ff7104189776c69b3a3b0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bi.svg",
+      "bytes": 633,
+      "sha256": "00f86f0400888d0ecf5a2b9bfa66f176af6095f413d53d622b6c061c1723cfd9",
+      "gitBlobSha": "2b796ab0a00c5a8b5eafc285b50ada18d429808d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bj.svg",
+      "bytes": 197,
+      "sha256": "03e7fd78282d719338630eaf2301fa9c9dbcbf57a9639a20e8fbb43353409569",
+      "gitBlobSha": "b8d1bd2c48655f14adcad2c15a06d14ec5dd0ed5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bn.svg",
+      "bytes": 20922,
+      "sha256": "cdb37ed23eed4e4a010d3e68db6d66048a7e90b4d465c735f6e6072564b0fa91",
+      "gitBlobSha": "98ce7f8849cdcb7de386ae4c37916228892051c6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bo.svg",
+      "bytes": 240385,
+      "sha256": "7d724dac914eaed951a3e3dd901350b9636cfbba0fc4d78f1fcf193c1f29e67b",
+      "gitBlobSha": "3bf24b0acd43a799b42a1a2724e2a2e273858479"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/br.svg",
+      "bytes": 4160,
+      "sha256": "e0215eff9f53b0236db885963ac45d6baea52e10ce33ceafdbe0eb1820d21160",
+      "gitBlobSha": "203e64d402432eea4639875c6b3e4f71fe4e98d6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bs.svg",
+      "bytes": 195,
+      "sha256": "44946f0ba5ad43cabe8bfa6c52e0f7a9562f7ff336d58478577f3b3a19c1ef08",
+      "gitBlobSha": "852306a578922db0e721fed92e704fdf93d6f37e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bt.svg",
+      "bytes": 36820,
+      "sha256": "39a47be433cda95dab7521aed8609c61f3fe377524e5de397dbb9c75624dd822",
+      "gitBlobSha": "16045d08527bca5d2d0d0eee200c2926664e8177"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bw.svg",
+      "bytes": 193,
+      "sha256": "e89b9cb27040b2995d2f66fca2492eb19434c0793d80ff70ce6819f2540e40a0",
+      "gitBlobSha": "4c602337f794b9ae545ab00bf46df3814fc91fb1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/by.svg",
+      "bytes": 1959,
+      "sha256": "2af1ac1ecbfda4690e8b1b076def28e384aa69cbf5004ee37cef43665fd6e4f6",
+      "gitBlobSha": "b5afd5b4780dad05ac2a8577bc0aac0b2beb4b88"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/bz.svg",
+      "bytes": 80883,
+      "sha256": "99ff3a88d1493f5e00c8a4dd9f7eb379a004961f4503eb3e5598e388c911b583",
+      "gitBlobSha": "0f538533de2a57c7e479c316c5dcad54234e41a2"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ca.svg",
+      "bytes": 658,
+      "sha256": "3cd6c2b9fe12bc0617ef4374b570ad87920bae757a95b104384fc301352c6942",
+      "gitBlobSha": "154cb1933a74e84cd3a18671e444e4c236d5cbab"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cd.svg",
+      "bytes": 307,
+      "sha256": "e2e70cf2f16e4ede17ec2a6d0b740c82b622e2cae6b3419d2217092f9c0872f4",
+      "gitBlobSha": "5892af08e72d599942ac66223aca7947729cafc2"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cf.svg",
+      "bytes": 331,
+      "sha256": "f36cc981bf26cff6c9111be3edf29aa565164e713f9704e22d98116ac80816aa",
+      "gitBlobSha": "e23b56799791882a7ad6c42ee0e5eae1b297586b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cg.svg",
+      "bytes": 203,
+      "sha256": "3bff163be26e1c6877bf6aebdd3115eda88535d32c56b8c6406c998385caaebb",
+      "gitBlobSha": "c383ee8b6ea80e21a0efa0bceba3a899a524f41e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ch.svg",
+      "bytes": 183,
+      "sha256": "a5ec3bbf0f3e686ea05ae17f51e8f3a287ad332217b679bbd393842b7d427859",
+      "gitBlobSha": "f7833a5d0b66c8e4db5c79cbcb6657ca6f6333af"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ci.svg",
+      "bytes": 194,
+      "sha256": "aaf7093dc7c4b1e65d6cd0a65cf20dc957971205a04985897fb3980bccb3a394",
+      "gitBlobSha": "4448319659f0452294b50194c7f8e847a44c8db0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cl.svg",
+      "bytes": 592,
+      "sha256": "ca4d50dcf36926c82f02b895975f351a639b0aa1b91bb6ef776f4f07f225cc34",
+      "gitBlobSha": "1cbed437235b345fbda242ed41c612df9134fe4c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cm.svg",
+      "bytes": 266,
+      "sha256": "e00c6cbb0cb7364bc1b825e145ae6232d611d0e457dfa621b6bfafa3b7c76a7f",
+      "gitBlobSha": "04a5c7f7514938225f711e71da1b6eabcf16d39a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cn.svg",
+      "bytes": 536,
+      "sha256": "ce797608958527808601798df00691aced6120bd600c0624161230020229dc99",
+      "gitBlobSha": "3227c3df9b035dfe98e942202c6693a6467dba88"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/co.svg",
+      "bytes": 201,
+      "sha256": "ec3daa5a284fc6d10104a53fd16ea77eba9ac1044ffa629f953644c1de63dcd3",
+      "gitBlobSha": "2f3901d1ef44cc8a1c1b03e03540b97e61fbcb3b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cr.svg",
+      "bytes": 63168,
+      "sha256": "f7e60b87265310b60217dcd26b24879222a7e5e13fe4c52ae1afdc3c6c737bbf",
+      "gitBlobSha": "d0b9fb1c19cf2c34593935e88b08f15279876dfa"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cu.svg",
+      "bytes": 282,
+      "sha256": "afba6d3e29d510e256c07b23f2afc00a9cea87296765138e5645fe995d24249f",
+      "gitBlobSha": "6777e9c5e0346b6c2420e296c88b352e65000d7d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cv.svg",
+      "bytes": 1494,
+      "sha256": "bcbf0add799b13377bdf842e1f380ff630650d3b7dba2d8f1273093cfa6ceb0f",
+      "gitBlobSha": "0fd3001fffba2db77d10816a60e720fd5928ed26"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cy.svg",
+      "bytes": 22643,
+      "sha256": "4473ff55e82a2872232b71802ecf37784223bffc2f13d2e564489586f94ef691",
+      "gitBlobSha": "c81cc8f119408e82ee5b7836f74460dc8b74f91a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/cz.svg",
+      "bytes": 210,
+      "sha256": "5f4ba801f6715e2d29f8b88f785bfc77a0dc1455a0f649626ad9a0cc66cd6df2",
+      "gitBlobSha": "391539952a101132b9c3fe18792de5e17c92c090"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/de.svg",
+      "bytes": 186,
+      "sha256": "595d7718f6a22e5ea9de0cbbcabd857ac1892f4a6c81beb1ef936050193d9323",
+      "gitBlobSha": "60e5efca6b784f5a28d38b8103bb6dd005b09142"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/dj.svg",
+      "bytes": 371,
+      "sha256": "072cd869e9430e51fe7d48b0bd33c882b6365386c9987c03cb76f802597af936",
+      "gitBlobSha": "6b96f378bb4c768bb12f7a4b931202ef18b59d0a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/dk.svg",
+      "bytes": 165,
+      "sha256": "eb4ea9929e6491fd0444ea5da5b9a19dda089a2ac758ad63956cfbcc7fa81cc3",
+      "gitBlobSha": "1ecf992de9947cacfe98d7b80866d8fcacbc6d0c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/dm.svg",
+      "bytes": 4810,
+      "sha256": "b4371e4737d00b0391dbfc43db8136f9976dfc2d348c6b9cecf598e154319edc",
+      "gitBlobSha": "b11ebe5039ebdbf0d8d5b2b5b1727b2da8db2aba"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/do.svg",
+      "bytes": 148257,
+      "sha256": "ed01134a6d931721c58fc34771e34e1d513e9e06e7241a1e6528172093c77880",
+      "gitBlobSha": "3ed50b61e4db90fd237b5f3921af6d04784687ef"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/dz.svg",
+      "bytes": 285,
+      "sha256": "51bda9bdc313fa5418550d94d46f31e0c396f4e70c810b629fac0430f4b7e638",
+      "gitBlobSha": "2b23ca4ade8931c1f6b167d997f2720695650931"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ec.svg",
+      "bytes": 216988,
+      "sha256": "59c54050d583084c7ea35fdba8e1afddb99260cc22c4fb2c81abef41144a335c",
+      "gitBlobSha": "61979d7c52ba991aa97a88ce821ed08fffce4903"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ee.svg",
+      "bytes": 183,
+      "sha256": "a880630e92f27af0f8f183023a98ed1e9fcee60a9dbcf721d0630fec5189ed36",
+      "gitBlobSha": "2b64555d090e309b60ec9bce3b7d1763b1af47c8"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/eg.svg",
+      "bytes": 18351,
+      "sha256": "07129395f46d9e71844fe9b485e05bf49741bc72a480b567297d6d865f3d8150",
+      "gitBlobSha": "95fdd19df04104dd13b9ab5cba3597825d1f92ad"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/er.svg",
+      "bytes": 3251,
+      "sha256": "69f92c176c843d7c899eaa7beaa1f75a0499d49fbb24e2053ed98be77e176498",
+      "gitBlobSha": "8cb578322a81ce09b03f932890a7a15707df730a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/es.svg",
+      "bytes": 153035,
+      "sha256": "d672868d51fc5b4f2d76f510c9360a4401bdb3ca805349bd04cb4ba277d5b379",
+      "gitBlobSha": "8e6e4c252bc56fb13b890a109966eb98c990d22a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/et.svg",
+      "bytes": 809,
+      "sha256": "980ec719a0be7227e6769b9bf9198b182b743b9544326f4ef2566ecd3ebfeb94",
+      "gitBlobSha": "53e79aae3b68a3770ba61f5b00dfd76208d4d6e6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/fi.svg",
+      "bytes": 194,
+      "sha256": "5d1ab833fc8f13fd2474b99286d063f2bcd4332cf859063841788f908656aa14",
+      "gitBlobSha": "cc3510e5465ec2a3759a250b8610e81734944917"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/fj.svg",
+      "bytes": 40121,
+      "sha256": "e2c0c872c02b315510c6923a7913d1783accabab0ea1eef103a3f23165af320f",
+      "gitBlobSha": "6eebe60bc3bceec373f8811e748de69487b8d620"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/fm.svg",
+      "bytes": 686,
+      "sha256": "d88d4388bd3ecf181378e5f7889b04a5d6ccb10e0b0b73baf8f0149c440ad5af",
+      "gitBlobSha": "09532fab90d67b7a458ad51108a266dfb5c8bd9d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/fr.svg",
+      "bytes": 191,
+      "sha256": "09645c97a47436337d63cd54625200542c65e0e1c83b774a58c9d28d0555b0e7",
+      "gitBlobSha": "6eb0e18b79130d7e5013df0e2fa804925a9b5f96"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ga.svg",
+      "bytes": 201,
+      "sha256": "43e2be0bceff86a5e9611d197478256416e2ed1b106b9df24651d553bc87b41f",
+      "gitBlobSha": "3fd1d259076d79eac3342c8cf49086438cf74231"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gb.svg",
+      "bytes": 553,
+      "sha256": "42f04826dd7a76e4ecdc9a55fb4a774a26e03a425ca1363628bb1c6f6ea1a87e",
+      "gitBlobSha": "82b1fad72aa6cfe48b6007b36032b022ee804eff"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gd.svg",
+      "bytes": 1101,
+      "sha256": "a2068c160dddaf85e5ac16423100c50d1970990a7468f3e81eed2d11426c689a",
+      "gitBlobSha": "bc51894e402ab84b9c3e0595ed05ff8bc5c1f4d7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ge.svg",
+      "bytes": 481,
+      "sha256": "dfba0d29f581ff00c2e46b69cc90e0e9ff6371ab92fbe300664f6622f7ca0355",
+      "gitBlobSha": "7e0459b40d8361b7aacdb4dbbe95a8b4f4082d91"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gh.svg",
+      "bytes": 255,
+      "sha256": "a8c4320f89adc39f1c43f0100031e6acfce9299aed5bf035732d00d34d44ee88",
+      "gitBlobSha": "fae895679ceb4466c324ec0b1e80e6c7999383e1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gm.svg",
+      "bytes": 246,
+      "sha256": "d4418b31447cb5b7ddfcc3b47f3075795700363cc97132d9ab8b2de417027b98",
+      "gitBlobSha": "594918531ac1fb49d1d9a9f2713fc94277e384ca"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gn.svg",
+      "bytes": 205,
+      "sha256": "4932e18d832d6a781bc00400b69136cc9406234d3800e1e66ea809550a84b423",
+      "gitBlobSha": "9967a7bcde3020b1b8195819bed84635f9558be4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gq.svg",
+      "bytes": 5658,
+      "sha256": "c9127828406765ae4faf593ac240d82be9913bde2664ed462fc31dcae68eef52",
+      "gitBlobSha": "459b5a17b581a5b7083e7ec357bd2cd5efc643b0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gr.svg",
+      "bytes": 231,
+      "sha256": "e8a25b9e3e3cb19c682410411097401626c629152f31b45482c98abea8ab12c7",
+      "gitBlobSha": "e3a582ceea868d1bb806f9de54fa232d8b16777b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gt.svg",
+      "bytes": 55531,
+      "sha256": "d59addea6225e7eeb09efaee9a888aacc2b93651e1306a3de84764c6c729f821",
+      "gitBlobSha": "b784b274548b9dc01fdc53d98817f8e1cfac4d8c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gw.svg",
+      "bytes": 583,
+      "sha256": "00dd3c3891158fcb6de6afc3f93b8b4afc20f6aea7c344f097350fc8c9c0ffbc",
+      "gitBlobSha": "808b89c0287ba970567e6e56aa7695a1ddd97e00"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/gy.svg",
+      "bytes": 447,
+      "sha256": "910830b8f1f35c778f37eb37d47eea0ea952d1bf04070f7eaeb697d0f8ead948",
+      "gitBlobSha": "d48e3144f25acbfbb2348604bd0ec6e761f84307"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/hn.svg",
+      "bytes": 401,
+      "sha256": "d2dd47a43f01a52ffff72cc88bd0e4fc9b503dee57250d22f870c36346079c5d",
+      "gitBlobSha": "3ddeb2c88f17cee7af9cfc611e352b7ef104b296"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/hr.svg",
+      "bytes": 81475,
+      "sha256": "fa44157809f7739aabca54f3e27dfb1d7409ef17afe6ac18dd39294f124e205a",
+      "gitBlobSha": "ad24ab9f0ffd9669c40cca868b400974d1442673"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ht.svg",
+      "bytes": 101261,
+      "sha256": "65839463e163fd812f732f606111c68961e9bb23aa9624c8c448605fe0e086a1",
+      "gitBlobSha": "b6ca967c72a56dd95fe0ecde0b61b04bf08ae546"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/hu.svg",
+      "bytes": 195,
+      "sha256": "2025b7ca34eac130a257abc189273adb73f5749cb0eb7c5c6d865d433d842e0b",
+      "gitBlobSha": "af288852ef0d6110d718014e1b5f043067445b55"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/id.svg",
+      "bytes": 148,
+      "sha256": "b9d9dea991a06a1211e93e8fa33adc6035ede25d07dc6e98cf97cc57fd94a340",
+      "gitBlobSha": "08c1098ea2fbe60007751195e71ccfb3adcf4731"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ie.svg",
+      "bytes": 204,
+      "sha256": "5a2e2ec73fb75642ce2a9f9237eb472016794fb49e825f72e769d2d10dff3f11",
+      "gitBlobSha": "ff76bd85ed003546a4f8e646d2ce26eecfdaff89"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/il.svg",
+      "bytes": 309,
+      "sha256": "9e884f0c6d1001f8de2b478d3de9582f93fbbd9badcb31e3f52fefa3974ebc75",
+      "gitBlobSha": "de884eab2a9437917f87521004e3e251fc3bb61f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/in.svg",
+      "bytes": 720,
+      "sha256": "ea9966697a16e75d64b4e6a9a468009944bd336e8098a34839033eb641329fcc",
+      "gitBlobSha": "52179283c7e6aab0b2067ced3d9092b8e44f55e4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/iq.svg",
+      "bytes": 1165,
+      "sha256": "b0de86ef9c1cfb0067e0989bffa6f15579e0c78b331fc29a9e3469aea3cbec20",
+      "gitBlobSha": "2b62c58106d756f3334dbda3d399dc67c95540a3"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ir.svg",
+      "bytes": 1298,
+      "sha256": "8e3015ef6405ba9c80a9c93897e3d75f21e4df303f3bcf8e363ea4c96cd06272",
+      "gitBlobSha": "272eff0c3279aa30285aaf40e72d6a1eaa4e1df0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/is.svg",
+      "bytes": 249,
+      "sha256": "b14a90783cbe55b65c663efb67e1c235389f46d60d9601d28b36773016d520e2",
+      "gitBlobSha": "c1d7fc372791f75276e5e17b138a33d582697ef0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/it.svg",
+      "bytes": 202,
+      "sha256": "7f818fa8e36ca606a8cbd35106fd7d277f094f10f2aa1f7a0585421a20e37070",
+      "gitBlobSha": "554137885f9a7cff5a705e19ace25a91ff5c4270"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/jm.svg",
+      "bytes": 259,
+      "sha256": "44504dda9d5bff31dfbcf5c8cce7acf0bfb9a7b16a697aadca3f9c4e854b62eb",
+      "gitBlobSha": "7273742b6549b2a56c0bebd99ac1ea29c81c8fe1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/jo.svg",
+      "bytes": 371,
+      "sha256": "fb2b2896420258e37d2e27a1d07c6488b5ff14a587edfbe7c4153f93042b8424",
+      "gitBlobSha": "5a4eccf46cd25d74308cc7f8b0ab0b4dd6da6f89"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/jp.svg",
+      "bytes": 160,
+      "sha256": "e8e6f6e75bc02eeb35e5904edc13df9b5990da70ac1ff1daa7a9fcc61c709a03",
+      "gitBlobSha": "0f02949295f965b714af739948287bec15667d0d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ke.svg",
+      "bytes": 1001,
+      "sha256": "0c65788e07b97827d85662c06cd74e83ab6027c8915579821df896446b26d4d5",
+      "gitBlobSha": "370a13fac746a8f26eeb2dcc5de18ad59d86ae9c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kg.svg",
+      "bytes": 8089,
+      "sha256": "b6e67c6fce0ab4dcd376abf4b1656bd8bc9a654c8320d4eef45c810921a1c869",
+      "gitBlobSha": "fccd63981d5807a02ca310bc97075b3930af4464"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kh.svg",
+      "bytes": 10048,
+      "sha256": "bdff20910e6d11f5c5b0a562d1302f4aad792255fcdc2e9a46bce1ed8fe8c56f",
+      "gitBlobSha": "828e54a79f7c06a9dee93fcd503c73c79daf85f6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ki.svg",
+      "bytes": 3271,
+      "sha256": "3c5c18f1a61d1c782f2f313f197b00530b6de5d72b3ed81814d7984d73c4e05d",
+      "gitBlobSha": "ff58c038f4ecc37b31b745d287bf8b136cc0ac62"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/km.svg",
+      "bytes": 558,
+      "sha256": "21e3ee9de83bf7ac6b57400e92f63d81f1f174624e9a2f408a5dd23d4d8f8f04",
+      "gitBlobSha": "88f36bf75a9876b05dda6d6b8bcb286377c21749"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kn.svg",
+      "bytes": 539,
+      "sha256": "5274df62085604bfd3586bc890842e0ea27a1c3dd3069571179e3eed381ed036",
+      "gitBlobSha": "8764dd78c1e7660d777a9c2b54fd8e6bd80ceaaf"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kp.svg",
+      "bytes": 334,
+      "sha256": "2891274f3603b50b8eb795f50ba361b7b4586ecc1f42f900689decd527fcc386",
+      "gitBlobSha": "42affa73a1bdc757627db850439708cb534d022c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kr.svg",
+      "bytes": 817,
+      "sha256": "4e0b6d5fa63e2fc1c3d86fda025a4c2129e52d5fc6551d8355e9385dd2d88f4b",
+      "gitBlobSha": "a44c6e1ce1aa897a3f14cf08dffe35db81b1291d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kw.svg",
+      "bytes": 232,
+      "sha256": "ce62298731cb48e5f502af92203342f43bfa9568acfc6d2194c7227760e9184c",
+      "gitBlobSha": "b4bffefd20f4e9ac361fb88ffebe852b7c3da746"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/kz.svg",
+      "bytes": 9636,
+      "sha256": "71a7d90e17ae74f6bf9572d9560b83d2d6ca047482fe2a229b770c67338f3848",
+      "gitBlobSha": "96855b086c4562a1b661fc725c8840d659282b57"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/la.svg",
+      "bytes": 233,
+      "sha256": "c0cbe90abd407b916c31bc6d2cceb90ff61cf78ce5de00173e993c67f4e4ca15",
+      "gitBlobSha": "0f596b2705b9606cfabc4cc740000d4e5ea7a420"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lb.svg",
+      "bytes": 14384,
+      "sha256": "2c69b33a241e21c003113bae58fda58a08113e265a94262f6d0de39277876462",
+      "gitBlobSha": "f69dfa665b08215b170fb2cb9e2090af8d05830f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lc.svg",
+      "bytes": 254,
+      "sha256": "13f4f19e5d3a4a590ba7698e0b19df13d1dd817e4928c20fb4ba949ed8737daf",
+      "gitBlobSha": "887ad78d4dca3dd3e8f7c3257cd417dabf3e6545"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/li.svg",
+      "bytes": 12408,
+      "sha256": "308d212c6046d523637598a5034bdc6132706c7c3c33c5d042748226da61e8c3",
+      "gitBlobSha": "9cd6ae1b9ec23680548dc56f1c0c586dd92344b6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lk.svg",
+      "bytes": 19240,
+      "sha256": "c6d5351f0c9d5611cdfaf64b6b5324db73b437bc9d4e4bdc8a70a7d66533df93",
+      "gitBlobSha": "33f6e090692dbc639fcb95a9582e10930e269a92"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lr.svg",
+      "bytes": 675,
+      "sha256": "b722560baa4a55e843b78f3a3485ff4ad31e5acd659142add4ba3990be2578cb",
+      "gitBlobSha": "660ab03f47ed86d8b1f11754acc05eedd6dd0d3d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ls.svg",
+      "bytes": 1442,
+      "sha256": "66002ab481b35579ef88633fea8114d698990afdaf94b0173e9c9d614d126b49",
+      "gitBlobSha": "0dc59f9fd9188e1a133bee94d208a2abff9bcd5e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lt.svg",
+      "bytes": 201,
+      "sha256": "9743f780184a60fc75a312b34151ff1a2699e0bf0d456eb91dcbae0472b4d566",
+      "gitBlobSha": "90a3ec1c4484ecc483354901d6d4605615946ae9"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lu.svg",
+      "bytes": 202,
+      "sha256": "23c57bfe462e31f5655923c458bc77769dc62679e69750f6bf96371f62287f70",
+      "gitBlobSha": "b754681beda19128b13adb5c990cde05d83e5f02"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/lv.svg",
+      "bytes": 155,
+      "sha256": "470445d5df6d4ff5e51e0fe120a78ad2e416b86476efdf09cf921d43806fde03",
+      "gitBlobSha": "0037f27735d8a73408901e81a0c492afd2a534a8"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ly.svg",
+      "bytes": 353,
+      "sha256": "e2b019746d67350a9dcfc595616d0b73b868c8f3757f9516665e9141d8f0c117",
+      "gitBlobSha": "8c9ee587c2594ef52557611f6f6baec6c008c133"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ma.svg",
+      "bytes": 258,
+      "sha256": "1f6f0d1bf2e6d69fc943eb0eb3a96a4e5f8473bfdd1bd6b5a4c903c6c7ee2fe2",
+      "gitBlobSha": "d6b54a3c738192d3fec499d6a3495a76b9c55ecf"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mc.svg",
+      "bytes": 155,
+      "sha256": "bb97fd4d27f655e164f59612ad1dfd6d25a2663369ecc38b3777dd88b9c2752b",
+      "gitBlobSha": "395adc575d00e3fb2d00fbda471e3876fb3eb8d8"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/md.svg",
+      "bytes": 33975,
+      "sha256": "a61c465c0aebd959715da03389b9aedcb9198ef840f578ef03cc2af0c76bfa31",
+      "gitBlobSha": "6fc829635e0eb093eee5568fba5cd1d217a880ca"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/me.svg",
+      "bytes": 108343,
+      "sha256": "4c5a11bc5fc1b0cdb2f7c10b5fe2f4aa50f44d970c74bf9c408fc58dcebfe66b",
+      "gitBlobSha": "8b3f1ab6f83314de9f9bb3a8c3febb747ea053ce"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mg.svg",
+      "bytes": 194,
+      "sha256": "00a570504860576bcb032613cb185013ce9400e05fd9c1fdc274f9664d27f9d6",
+      "gitBlobSha": "d83543fc167491a0862ce15abf320ff5e0d5bbd8"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mh.svg",
+      "bytes": 796,
+      "sha256": "4d9431d294c64f7e972d174778186715be741d5941e23db89a32dcffcfbfa2ab",
+      "gitBlobSha": "4ca4b6673c2884c2078ea3fad59117d5c20b2eb1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mk.svg",
+      "bytes": 366,
+      "sha256": "72a37e581f614d791fa6d88831d06c56a0f757e5a596d8fc1189b0d8147cfda6",
+      "gitBlobSha": "e10ed70f9bd82a0fae83777f98f477cb12d6c6a5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ml.svg",
+      "bytes": 197,
+      "sha256": "ae9516c41b4bb5385e047fc66da8e0e3e3b9360a5850c36d4b5c21950be3853c",
+      "gitBlobSha": "df345c248003671655d29f7060e4ef8ada2c74d7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mm.svg",
+      "bytes": 539,
+      "sha256": "2ebf5312f5a4d89646aba2320b3dce9918136bdfd42303819830fcc29e905edb",
+      "gitBlobSha": "4509bb3ed38a78f2b271b83dd39654941c9141f1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mn.svg",
+      "bytes": 1496,
+      "sha256": "4f89f928fbfa245916b324dc272363ab12dba689814a9d2112023205e8e69baf",
+      "gitBlobSha": "f1805f8eec8b2b715fb2b9640a16394053b706ff"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mr.svg",
+      "bytes": 333,
+      "sha256": "1655e7ed2d848678e50138df15f3db7b37ed7a9c4f61cdf7e26cfec12d0e7057",
+      "gitBlobSha": "8c3785949c6df323d27707790cc1c4be5c5335cf"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mt.svg",
+      "bytes": 15284,
+      "sha256": "708f8eef0bca92371fd77cdf0f567bb432f292e0fea202b97e181b011bddf3cb",
+      "gitBlobSha": "a880f1fc2dd619f1861b91423f02cecb78d795cb"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mu.svg",
+      "bytes": 239,
+      "sha256": "c35ef8388abd492cb6ddbb0b46e3be87244ec1088682de208a745c93c4852a80",
+      "gitBlobSha": "7b1af9ccbc8bf8536a4ad6f8b7a6353859fcb8a4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mv.svg",
+      "bytes": 247,
+      "sha256": "a825c00d340b88c63605d514c9c0e74ef17c0cf10caa0d0e46bb7ebee4788dd5",
+      "gitBlobSha": "82f77be6f8c198e6b7586bc61c1dc2f05b38aecb"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mw.svg",
+      "bytes": 787,
+      "sha256": "81a7dc8d3f32fcdc7cd98408f9602f53176a7ea3645770e4d852fc3646a2e576",
+      "gitBlobSha": "2c8088419a16e7061fd621bffceb898f224cc5b5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mx.svg",
+      "bytes": 143318,
+      "sha256": "baa6f7163f307c16a5d3e36c83a09fe46adbe16adfa866d4bb2d750a79d96b92",
+      "gitBlobSha": "b82436bf96144ddc79bcda98b39783e634dabf57"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/my.svg",
+      "bytes": 662,
+      "sha256": "1d3284c77094859fb63c1880af4f8f9a3916935a12faae060678c6e3455e956d",
+      "gitBlobSha": "bb160fda0025d330593368617460c549fe39e0d0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/mz.svg",
+      "bytes": 2757,
+      "sha256": "649e978eea07a70c6e7303a5291476b3f224063070abf4f6a5f4ddcbba7c1cf6",
+      "gitBlobSha": "29e8856a806f76b9b651f7dc3d22518230bbeb42"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/na.svg",
+      "bytes": 728,
+      "sha256": "ddc9fc887177f92e80fed16082c988924fbd19773ea33729fa3f2a1896d13814",
+      "gitBlobSha": "472a82e3690b35736d68f80215b97f30ae09840f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ne.svg",
+      "bytes": 243,
+      "sha256": "286098862efda02108b4a8fe0c7f75b1275685be841c62a283d55412155781d9",
+      "gitBlobSha": "3da73140d03e46e4b89330999ad49f0390ed060e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ng.svg",
+      "bytes": 163,
+      "sha256": "3dbebd9f8e31821d5fa22f976cfe9a338788fda81308f0d573e69fd9dfcce24e",
+      "gitBlobSha": "ca4a19fcd101c5b6d767e42398acf4e8d65e4149"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ni.svg",
+      "bytes": 23894,
+      "sha256": "ed4fbc934d1bde93634e8904e0c1aec45587c95a2bbfbd024aa729e9adc956d6",
+      "gitBlobSha": "f1d41a1ab386b424ebcaad71c058694967c8175e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/nl.svg",
+      "bytes": 200,
+      "sha256": "2f7463573cdc3a0f7760c18459a3280d9272d1e6b2060909f12b95644e4fd545",
+      "gitBlobSha": "6598c0bae679069ba1f28ed656620039ead84be0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/no.svg",
+      "bytes": 223,
+      "sha256": "0d4b9a52f0a6bd264258baac791b39910a895bb6ca06f63477fa823a262febdc",
+      "gitBlobSha": "ebb8fbdaed694e35e5bf72fe6d21fad66c827ffe"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/np.svg",
+      "bytes": 1052,
+      "sha256": "f4a65e693806dbb31a5b2808a88d577c72ba0e8c5872fbd1e8600ff63a77c489",
+      "gitBlobSha": "ae7b651d98b9e3e69a082871558fb664b872574e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/nr.svg",
+      "bytes": 545,
+      "sha256": "1db6563151cfc25388f8167a967a96b0794cde41f1bcfa3e521bdaa794af2fcc",
+      "gitBlobSha": "22e5bc49c8b85de324727a9f4f6f0f384e5bc2c7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/nz.svg",
+      "bytes": 1746,
+      "sha256": "aa29843a365d4eb21d35932172232d7d591a35fc51ac95c040c356f0f16c447e",
+      "gitBlobSha": "4f6af3c39bd94edf1a47547e0496f012ad1d0d98"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/om.svg",
+      "bytes": 175888,
+      "sha256": "38f39605556392f32fc4aa12e6db9a9c6984acd3cc7f3ccfbca9a014bc44796a",
+      "gitBlobSha": "9b80e4b353526a04c27091b740cf58e366adf24f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pa.svg",
+      "bytes": 280,
+      "sha256": "8e8c7cf854aa3367d9ed9eda6c585540bde6369ef6163f435334216be4536200",
+      "gitBlobSha": "c625603c7407aa5f2f9470e3c6fadc05a65e05a7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pe.svg",
+      "bytes": 156,
+      "sha256": "a35cf7c9bb6ac08e6d60d9683c78318746edc82284022aef02c9d6a07540045c",
+      "gitBlobSha": "93618a33285f43012b81c7c3b38e66cbbfb41a58"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pg.svg",
+      "bytes": 2969,
+      "sha256": "d98adee3bf8945b389144b04bc49824c85711e1d473236971ac8a48939328064",
+      "gitBlobSha": "aa5a7b7e58a49030a7dd908e5acc33de3622b211"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ph.svg",
+      "bytes": 808,
+      "sha256": "d554297356ab66a5061df4c73c3bb293381875d86175fa0508f7ac4f035eb721",
+      "gitBlobSha": "be4ac14c8a6ca9240244bbe516c84eabbafe077a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pk.svg",
+      "bytes": 380,
+      "sha256": "2011fe01e332cfc8f16c861d4818bacf4ed1b6d9fa657cc246f86ab15a313768",
+      "gitBlobSha": "91cd2f1893ba69e8507424334e649f1ad3ace270"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pl.svg",
+      "bytes": 164,
+      "sha256": "da6d9e34f2007194b0082d4caac04d1744b7b27fc40098747d4bc62e0d5a5bb2",
+      "gitBlobSha": "4a39bfaf06b1c74d2aa852436255710bdd585dfd"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ps.svg",
+      "bytes": 228,
+      "sha256": "6ccd9cbaff9c67f772dfa2154c5e178fdd7a78f07e7177a3cea431116a98afdc",
+      "gitBlobSha": "786c8ca7829666f763d19e75fc56f1b3c6af44ad"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pt.svg",
+      "bytes": 10853,
+      "sha256": "f60337f226fba6b695f54222f63b354920b1ecb4a0ff27f16bd49983f345f4c7",
+      "gitBlobSha": "0c610beeaa8b6bce8b24a74cf9a9f024b873587c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/pw.svg",
+      "bytes": 157,
+      "sha256": "47fc578c8ad500ed537a46e73859b597f819474e3d0227ccd266cdd793596aa6",
+      "gitBlobSha": "7ab6c7574c77942efb1c7db3c321d41c2d1980d0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/py.svg",
+      "bytes": 23500,
+      "sha256": "5bb06bf5b8f3ea2633dcfc0d417400786c69d6b1cb681208072f4658d2838af2",
+      "gitBlobSha": "63f38a7da64c0ab87bbaf8ac87279fa6b90b567d"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/qa.svg",
+      "bytes": 264,
+      "sha256": "5332c024cb6bac6d7ca2f96347d2ce8cfc63f5bf2643a1d1e6ed6146e6b75a1d",
+      "gitBlobSha": "65b21848a5ca472a472cb076b5be9eff7a8505b2"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ro.svg",
+      "bytes": 203,
+      "sha256": "20c8e69585273d35ba38fe2cae0d0201445a3b410c9589f4f7053316662482e3",
+      "gitBlobSha": "8dc284833a3a6f6ec3ee8e61f72a1b52e21bbfc9"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/rs.svg",
+      "bytes": 28859,
+      "sha256": "5bc4c8297033b5b31ca9496dd1ad29232aa14389dc8c93db38f99faa707ebba3",
+      "gitBlobSha": "40c9d6d64aee1ad748d72d21c4a63191e2e270b5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ru.svg",
+      "bytes": 200,
+      "sha256": "eb1dbd977fdb824dcae7767ce9ec3a023e41158e81b5f524772609ddcb622025",
+      "gitBlobSha": "9c0cc49fdf9594664f5a721b5f8b75b2e0c32363"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/rw.svg",
+      "bytes": 894,
+      "sha256": "21b67e23f19a1bca9b4ad87ff788b4992cebc00a6deeca1eb9c56c16b63c0de8",
+      "gitBlobSha": "d237941340fa5bbeab7f998ba3c648b8658888fd"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sa.svg",
+      "bytes": 24613,
+      "sha256": "7176d38f2e39fa7c96608f5ae85bb51ba964f1b9a972b33b0d04796fe4487f71",
+      "gitBlobSha": "5eee1b5446ff212e559111203c6f697de9ba1807"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sb.svg",
+      "bytes": 935,
+      "sha256": "56e24d58d3912dcd3c89187ee9ec08ea09957055296e823007ad615a4485f751",
+      "gitBlobSha": "e4bb3ff0d2e84f1b43d3bb5d7f7c733ada10e331"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sc.svg",
+      "bytes": 273,
+      "sha256": "b7a1ccdf0b210a2273426eaf334679dba7d3f5a90dddd91882beffa891bf3035",
+      "gitBlobSha": "ea40823f465d06fbfc8e8d2e67cf2c2361a26ebd"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sd.svg",
+      "bytes": 229,
+      "sha256": "305064d3c23eac774752898e1b3e9ff8ab7ecdfa45495be446dc520de8415727",
+      "gitBlobSha": "477877f68d32766259df09f5a85ac08742b78760"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/se.svg",
+      "bytes": 172,
+      "sha256": "426348d99d9cace2df6eaa6d6766d5a5ac21bb65a504a4ed974486cf96156b8f",
+      "gitBlobSha": "b32a8f9cdc0c3b3b387bac3da07de051c33e6c61"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sg.svg",
+      "bytes": 550,
+      "sha256": "d8782c5cc56587009a4939e9c0a95402001114eacda264417cd8f1678ff9329d",
+      "gitBlobSha": "4d4a817e55a382855e4341ac306f435d73c807a5"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/si.svg",
+      "bytes": 1321,
+      "sha256": "31b0d198128163affed8e660033c7a5cbe3ecc726188ab678ddb5521d5e9bb4e",
+      "gitBlobSha": "bb23bb3283ad57a8804d140dd4c14de09dab2cb0"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sk.svg",
+      "bytes": 1026,
+      "sha256": "e684da4cc4c07969475456c69ba6e9e853360d5522dd5273beec02933c5f5767",
+      "gitBlobSha": "2abe6f497230cef7f0088a903c993a6e0539563c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sl.svg",
+      "bytes": 194,
+      "sha256": "21d7e0663d2b8e1d455a0e1456c63dfbb273becdacbf7c1fa0e22d915f136cf4",
+      "gitBlobSha": "ee46023bc96fae099d0eab18a22203458b47d64a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sm.svg",
+      "bytes": 95493,
+      "sha256": "bb35493ba0a9f7e7a447f8cf4ea17fa50777db06d7266e08edd6c54593aea1c8",
+      "gitBlobSha": "98fdaf4224be3547b9f1b58cfbb478a559bc2d7b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sn.svg",
+      "bytes": 228,
+      "sha256": "c0593c9c104142eadae2d76bd739b28a37d2218bf1ef4b37bf8fa9655bfab087",
+      "gitBlobSha": "3860b33f42b11e383f750fa3776d7057c28f4b9b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/so.svg",
+      "bytes": 274,
+      "sha256": "3a342342f94f00a74984e10743f4589e7856076df6686f05e3192cd0ee0300e1",
+      "gitBlobSha": "44ce2fd20bd36578d306d79a408b3e51e1d76d7f"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sr.svg",
+      "bytes": 307,
+      "sha256": "098067b9dd5a6aac668c8883f9b96fe68865dc20a6f88a8859146900e389dd63",
+      "gitBlobSha": "117d76d932776181b76fa5e2610f410d062d03b4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ss.svg",
+      "bytes": 385,
+      "sha256": "0f2a925c6daf8945ff257938e04b0609441f698010d80c9717904c71a54a235e",
+      "gitBlobSha": "20cc8218ca0252d69a4734eb3532803e0517b2e1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/st.svg",
+      "bytes": 355,
+      "sha256": "a95075950bff55641b4274439a909c6bda8005b22c397ef6315839ce9d0dec55",
+      "gitBlobSha": "555952c9e2af050d48f7f3a2f89cb0a7ed12f31c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sv.svg",
+      "bytes": 248937,
+      "sha256": "cbd0f1c0170aad674c898a602f0e43fcf330640cbbab0653d6ae4f941f7cd83d",
+      "gitBlobSha": "c81ee73bf63bb33187b7674db1f4dea16b33ea76"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sy.svg",
+      "bytes": 367,
+      "sha256": "114f63ff44c34361216c25e49c65ade53ba07a4607e5e917b089c60a0df6c173",
+      "gitBlobSha": "ca5d90efe63112ac450d04447d900b72aa4fd1ed"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/sz.svg",
+      "bytes": 6472,
+      "sha256": "3d48fcbb07942d6d590bceb07f8462db36130a625022f12710e53c6cfdc51f77",
+      "gitBlobSha": "25117b299e9f2497a9e9fbbda8e8c6a53ab3b06a"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/td.svg",
+      "bytes": 197,
+      "sha256": "46d9a786225c476c021be32564d43497ec48d654694379969ac86d4aec8cf8a0",
+      "gitBlobSha": "f94d6e537b6ffdb48628d428e69440e29ab20c4b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tg.svg",
+      "bytes": 423,
+      "sha256": "8d50a4818de595d967b3cd0d6b0dc91ce0532b1679813af9eea27a560a7662c1",
+      "gitBlobSha": "27582f185c1097a3c1cd12ab6d91f0b430a3c791"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/th.svg",
+      "bytes": 201,
+      "sha256": "6b5a7a862ef01de1efd7ca3526655609ef7b05cd2ee6e14eacc0436bb93da555",
+      "gitBlobSha": "3f22b44da28c3fc149bc743174c6af5300f6a50c"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tj.svg",
+      "bytes": 2217,
+      "sha256": "597f154cc4f0bc5b4941c880fd2cd79c2a20a1b1d5845c86e934c4500fab78d8",
+      "gitBlobSha": "ec4e481d944981a92417aea73937b10a3011ca18"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tl.svg",
+      "bytes": 279,
+      "sha256": "1f25223cf5d05c32593ca66f0126a14bd728535a6678edb5ba84df13614c0312",
+      "gitBlobSha": "1d6bb563869c1aa90ba97e4010c8bbbae02dc306"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tm.svg",
+      "bytes": 43457,
+      "sha256": "a03b94f68d3eec97f3cdc495ceb98af910087b2623a02dc233820dfcc2ec2085",
+      "gitBlobSha": "f49a647539626d715d7b7b69307066ac09479f84"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tn.svg",
+      "bytes": 278,
+      "sha256": "b0d8964ee6ff40309779e0a1ea2780926a85edf9f1715c22ecbd04e14a4be9b4",
+      "gitBlobSha": "482b55a90d8e5e248197b132504216ff305e4bf7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/to.svg",
+      "bytes": 227,
+      "sha256": "aaf4a1b55742a45ae01330347e723ec9d9da9b15e1e9e05cd7d1910de91eef00",
+      "gitBlobSha": "62cfb73e9df1dedb3a975809fa737a2f7ab8b599"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tr.svg",
+      "bytes": 287,
+      "sha256": "f15da84b4e5b23f54b8177126f5711e6fd0db8d26a1b0d3cf7901d0aa8e6b7b1",
+      "gitBlobSha": "5b046e64c2a481df27d2e6102ce8df54aab23706"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tt.svg",
+      "bytes": 225,
+      "sha256": "89fa29d1f4a553154be8ae34b5f6a31e4baf6197fee40d9103ada5b80de7e31b",
+      "gitBlobSha": "7479d1b8e3faa6e8388faafcc05e4015941b19b2"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tv.svg",
+      "bytes": 1120,
+      "sha256": "8596575d86d9ca070a2453f8fdfe7a0168d1df078e1e04ebfee804dff04069ef",
+      "gitBlobSha": "b3f930806aea2a3bc0cc778d4cb9d8d2902c3f0e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/tz.svg",
+      "bytes": 383,
+      "sha256": "0bdf0b45ec36def31a5ef9e162fe40bbca1d78a522bde23cb4f42d5929affdbc",
+      "gitBlobSha": "5cbeb7a83845ad1d608b5b8fb2aea962ce12ef94"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ua.svg",
+      "bytes": 160,
+      "sha256": "542eaacd659923163edf3b1100c43bc137cc1ad9f0e394dee94de37d40ce1fca",
+      "gitBlobSha": "4d09b7c8e6d49c4f9139399a121fc564793daa8b"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ug.svg",
+      "bytes": 3616,
+      "sha256": "b0d36274f9eac739b04046783a38c18bebd42587a0b0b1cc3d31a32e1ec05374",
+      "gitBlobSha": "463d425acbabde154f68e789ac3ad786b6aead22"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/us.svg",
+      "bytes": 765,
+      "sha256": "e1792c011daad918fdbd99a21f7f46fd71018ffd052af5a7d7faf9954d593e31",
+      "gitBlobSha": "9735dfac8030abf252c5606f22e0725162eeeee7"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/uy.svg",
+      "bytes": 5764,
+      "sha256": "856fc0e14ff877b68a68c89144852808e7a17b213d5f1dba4b9d27435c0b2f54",
+      "gitBlobSha": "9f5b3d6c8834924bcf629caf5c5800c6eb5c5f1e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/uz.svg",
+      "bytes": 1243,
+      "sha256": "7ce6e8b7f4dd2a5bc050f9e538d22fde2fd371df15b751e48a29c1c3cb3df00b",
+      "gitBlobSha": "379ab12c0eda09d4b9e177a1766377620d134aeb"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/va.svg",
+      "bytes": 106128,
+      "sha256": "23174e1d9538ebf371a55e0dbe1ada98b3e5062859b0c0d3b85f7f6f1427fa99",
+      "gitBlobSha": "9101c9f2fa7eb4f3d44608bc19256afe50d3e5e9"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/vc.svg",
+      "bytes": 339,
+      "sha256": "c2a36b00c4c8c637b6847ed2dafb6d90b879ea298ab57d062f6ab968027e1766",
+      "gitBlobSha": "f3892d7dbc4a68f3db29ab2fadf73175c1ca2559"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ve.svg",
+      "bytes": 1888,
+      "sha256": "756f64b7ab11de19928d6ee6235079200ba45477ea150b7fc3ffbd94f4fbebfe",
+      "gitBlobSha": "912a069e0783e44e93b99e008ceb9b4aa22992ab"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/vn.svg",
+      "bytes": 194,
+      "sha256": "bd236e52dc564431ea569bca0a7b81ae8e8663675cb24a7b6da43ff926cc147c",
+      "gitBlobSha": "691cd96c936e52aac82ecf1b61f8336f73e435d4"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/vu.svg",
+      "bytes": 2615,
+      "sha256": "18232f22b21730b4ec64a83c709f6546465c4777c2a3ad759686c3c2dfbc2745",
+      "gitBlobSha": "5e1cb1a5546c1211788cdbcf7b38a876d2f7de94"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ws.svg",
+      "bytes": 640,
+      "sha256": "acedd8fb18df15e9483cc8c0f30f24b7ff2299ca9006c261040e88677c0df0b3",
+      "gitBlobSha": "d7d19c2d0c6b75e056af4cdb12d2448955f3f654"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/ye.svg",
+      "bytes": 179,
+      "sha256": "a92f3989182049dc218f7698c45d8cdfc64e6f945c71f20a9d188dd01698df2d",
+      "gitBlobSha": "c32376c96ef2605a7d49bf2c3318b2954e63d0b9"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/za.svg",
+      "bytes": 566,
+      "sha256": "6fbf0b68db7024ac996c92b1bbc62efe9a3bf12e469efaa29ae4fe0fa5c6da39",
+      "gitBlobSha": "a00b44a83cfd8ed152652d4224a646e1fab61878"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/zm.svg",
+      "bytes": 5225,
+      "sha256": "b64a4ec9612720033a3e8de806cfdd112a8ce48f35b2ec66e013d6c5e25e3445",
+      "gitBlobSha": "65cc2dd48bea3d6f9d6ac09208c1aef9daaf7ce9"
+    },
+    {
+      "path": "projeto-demografia-ufmg/assets/flags/zw.svg",
+      "bytes": 1744,
+      "sha256": "f0b79e8841f06a4afed5a90142b1c202776dc1d1c82328f310458d7c0ee975d9",
+      "gitBlobSha": "92f8e2573cc8ed629542fc57577c29da0bf4ad4e"
+    },
+    {
+      "path": "projeto-demografia-ufmg/computer.js",
+      "bytes": 4201,
+      "sha256": "6b007c92fae07f9d4b0f39c847c4a7382876f2c8f00c4d23c960c046af8ed948",
+      "gitBlobSha": "5d7b04caa885db2265fffc6378e95921688301f6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/data/countries.csv",
+      "bytes": 12449,
+      "sha256": "ae002a2cc153d302688c686c68a9ccd3cdf6e33e3fa8ed6e89e589eba3c98cf7",
+      "gitBlobSha": "0b1bdff82acd57ff839897baef83149ee79a6731"
+    },
+    {
+      "path": "projeto-demografia-ufmg/data/countries.js",
+      "bytes": 36553,
+      "sha256": "e1babccc2a7c70b9beb5aa448098d1da4a407243676daa28149d7aad21eaa7a6",
+      "gitBlobSha": "7872f084448eb9012f33861799c77f3af8c1e882"
+    },
+    {
+      "path": "projeto-demografia-ufmg/data/countries.json",
+      "bytes": 52891,
+      "sha256": "6f9b29dff5f3b0d8ab1310f113394695bc0a68f41b7dff9b94b66e399dfff5b5",
+      "gitBlobSha": "3f677aa31e3eea416a40ec2f3255f09ade1a02df"
+    },
+    {
+      "path": "projeto-demografia-ufmg/difficulty.js",
+      "bytes": 417,
+      "sha256": "4076d36a5c47010488b4f6de90fb1ee7391551790fceba43448d5b166f6e39f9",
+      "gitBlobSha": "3b0720455ddc2e67ab79e092b6bd8f3e73e13387"
+    },
+    {
+      "path": "projeto-demografia-ufmg/engine.js",
+      "bytes": 5264,
+      "sha256": "a9072b93daa70f39e911d26f1b1e9935a83fd170d138ced4caa2a93132e4be2c",
+      "gitBlobSha": "ac588dba5711cae037ce8decd872c85641c2de08"
+    },
+    {
+      "path": "projeto-demografia-ufmg/index.html",
+      "bytes": 1180,
+      "sha256": "65c1ee6d78145c8fc330ac55abcb38fa5fe08895cd4d2782a5a8c89053666003",
+      "gitBlobSha": "86b3376b27614cf9e18f8b7709778d2fa7377a27"
+    },
+    {
+      "path": "projeto-demografia-ufmg/indicators.js",
+      "bytes": 1831,
+      "sha256": "c8dd1bec8d9c89fea9916ff7d12b1c03178949d558f85f16dc56cb71c5184de6",
+      "gitBlobSha": "b103d7d92517e97869d57362eb210afd84ea4075"
+    },
+    {
+      "path": "projeto-demografia-ufmg/modes.js",
+      "bytes": 1866,
+      "sha256": "e0477bbf6b31d089d55e9348008189585c28bbbb28505c58dfb0db8db4f36bec",
+      "gitBlobSha": "867f7c46a8fb1658c27ab356a03bd4684d6a99f1"
+    },
+    {
+      "path": "projeto-demografia-ufmg/rules.js",
+      "bytes": 1263,
+      "sha256": "8bd2451180cf89c51fe9110d55aff5d48114a37c0abde2f51b9d6f358ff0993d",
+      "gitBlobSha": "ba20c9b298da940c14cec066fc7b929b356fe567"
+    },
+    {
+      "path": "projeto-demografia-ufmg/selection.js",
+      "bytes": 1578,
+      "sha256": "d94385d26ba932e612b10d5422f6e61edc4e9d6a18a8928c47ec1baa6314dc2d",
+      "gitBlobSha": "c5eb8f2f42fba89a909fa050b6d7cd7709d1e4b6"
+    },
+    {
+      "path": "projeto-demografia-ufmg/styles.css",
+      "bytes": 17778,
+      "sha256": "009d5ccb1a287f6a3eac212994d57c9b18a8c3e33c72e9d1cff1aa9099524576",
+      "gitBlobSha": "12f80c9c4b51371f1bc6394926204b122019890f"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "fullGames": 600,
+  "pairedPrivacyGames": 240,
+  "legacyHands": 1000,
+  "rankDraws": 30000,
+  "frequencies": {
+    "BEST": 21014,
+    "SECOND": 7460,
+    "THIRD": 1526
+  },
+  "sampledPools": {
+    "easy": 36,
+    "normal": 60,
+    "hard": 195
+  },
+  "sourceRows": 195,
+  "values": 1170,
+  "previousValuesPreserved": 216
+}
