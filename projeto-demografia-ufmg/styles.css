@@ -172,3 +172,98 @@ dialog p { color: var(--muted); font-size: 13px; }
   .country-name-row { gap: 8px; }
   .tutorial-dialog { max-height: calc(100svh - 32px); overflow-y: auto; }
 }
+.mode-picker { border: 0; padding: 0; margin: 26px 0 0; text-align: left; }
+.mode-picker legend { font-size: 12px; color: var(--muted); margin-bottom: 9px; }
+.mode-option { display: flex; align-items: flex-start; gap: 10px; padding: 12px; margin-top: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 7px; cursor: pointer; }
+.mode-option:has(:checked) { border-color: #6e8bb2; background: #1b2635; }
+.mode-option:focus-within { outline: 2px solid #79b8ff; outline-offset: 3px; }
+.mode-option input { flex: 0 0 auto; margin: 4px 0 0; accent-color: #a9c5e8; }
+.mode-option strong { font-weight: 500; font-size: 14px; }
+.mode-description, .mode-recommendation { display: block; font-size: 12px; color: #a9b3be; margin-top: 4px; line-height: 1.5; }
+.mode-recommendation { color: var(--muted); font-size: 11px; }
+.menu .mode-picker + .primary { margin-top: 20px; }
+.scoreboard { grid-template-columns: minmax(75px,1fr) minmax(0,3fr) minmax(75px,1fr); gap: 14px; }
+.round-goal { padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 7px; }
+.round-count { font-size: 12px; color: #a9b3be; margin-bottom: 3px; }
+.round-goal h1 { margin: 0; line-height: 1.35; }
+.round-goal .objective-value { display: block; font-size: 28px; font-weight: 600; letter-spacing: -.4px; }
+.round-goal .objective-label { font-size: 16px; color: var(--text); margin-top: 5px; }
+.goal-instruction { font-size: 13px; color: #a9b3be; margin-top: 9px; }
+.hand-tools { align-items: center; justify-content: space-between; gap: 12px; }
+.hand-tools > span { font-size: 12px; color: var(--muted); }
+.small-flag { width: 32px; height: 22px; object-fit: contain; border-radius: 2px; flex-shrink: 0; }
+.hand-picker .hand-choice { min-height: 70px; gap: 6px; }
+.learning-deck { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.learning-card { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 12px; text-align: left; min-width: 0; }
+.learning-card:hover { border-color: #6e7681; }
+.learning-card.selected { border-color: #79b8ff; background: #192331; }
+.learning-heading { display: flex; align-items: center; gap: 10px; min-height: 42px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.learning-heading strong { font-size: 14px; font-weight: 400; overflow-wrap: anywhere; }
+.learning-indicators { display: block; margin-top: 9px; }
+.learning-row { display: flex; justify-content: space-between; align-items: center; gap: 6px; min-height: 34px; padding: 5px 4px; border-radius: 4px; font-size: 11px; color: #a9b3be; }
+.learning-row .indicator-value { font-size: 11px; }
+.active-indicator { color: var(--text); background: var(--selected); }
+.computer-commit-note { margin: 12px 0; font-size: 12px; color: var(--muted); }
+.sticky-action { position: sticky; bottom: 0; background: var(--bg); padding: 10px 0 max(12px,env(safe-area-inset-bottom)); border-top: 1px solid var(--border); margin-top: 12px; }
+.selection-status { color: #a9b3be; font-size: 12px; margin-top: 10px; }
+.round-action-wrap .round-action { margin-top: 9px; }
+.sticky-action .selection-status { margin-top: 0; }
+.compared-value { padding: 18px 6px 17px; display: flex; flex-direction: column; }
+.comparison-label { color: #a9b3be; font-size: 12px; }
+.comparison-number { display: block; font-size: clamp(24px,3.2vw,36px); font-weight: 600; line-height: 1.35; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; margin-top: 5px; }
+.comparison-unit { font-size: 12px; color: #a9b3be; }
+.comparison-winner { font-size: 12px; margin-top: 9px; }
+.winning-value .comparison-number, .winning-value .comparison-winner, strong.winning-value { color: #7ee787; }
+.full-indicators { border-top: 1px solid var(--border); }
+.full-indicators summary { font-size: 12px; color: #a9b3be; padding: 12px 6px; cursor: pointer; }
+.full-indicators .indicator-list { padding-top: 0; }
+.round-result { font-size: 17px; line-height: 1.4; }
+.round-result.win-text { color: var(--text); }
+.round-detail { color: var(--text); font-size: 14px; line-height: 1.6; margin-top: 8px; }
+.comparison-context { margin-top: 9px; font-size: 11px; color: var(--muted); }
+.result-ties { color: #a9b3be; font-size: 13px; margin: -12px 0 24px; }
+.info-content h3 { font-size: 14px; font-weight: 500; margin: 18px 0 7px; }
+.tutorial-dialog { width: min(100% - 32px,520px); max-height: calc(100svh - 32px); overflow-y: auto; }
+.tutorial-dialog .tutorial-progress { font-size: 11px; margin-bottom: 7px; }
+.tutorial-dialog p { line-height: 1.6; }
+.tutorial-goal { margin: 15px 0; }
+.tutorial-goal .round-goal { background: var(--bg); }
+.tutorial-choices { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 16px 0; }
+.tutorial-choices button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 82px; padding: 8px 4px; font-size: 12px; }
+.tutorial-choices .selected { background: var(--selected); border-color: #79b8ff; }
+.tutorial-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; padding: 15px 0; margin: 10px 0; border-block: 1px solid var(--border); }
+.tutorial-comparison > div { min-width: 0; }
+.tutorial-comparison span { font-size: 13px; color: #a9b3be; }
+.tutorial-comparison .comparison-number { font-size: clamp(18px,4vw,26px); }
+.tutorial-dialog .dialog-actions { flex-wrap: wrap; }
+.tutorial-dialog .dialog-actions .text-button { margin-right: auto; }
+@media (max-width: 820px) {
+  .learning-deck { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 620px) {
+  .scoreboard { grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 15px; }
+  .player-score { grid-column: 1; grid-row: 1; }
+  .computer-score { grid-column: 2; grid-row: 1; }
+  .round-goal { grid-column: 1 / -1; grid-row: 2; padding: 12px; }
+  .round-goal .objective-value { font-size: 26px; }
+  .round-goal .objective-label { font-size: 15px; }
+  .goal-instruction { font-size: 12px; }
+  .learning-deck { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .learning-row { min-height: 32px; font-size: 12px; }
+  .learning-row .indicator-value { font-size: 12px; }
+  .learning-heading strong { font-size: 15px; }
+  .hand-tools > span { max-width: 190px; }
+  .hand-tools .text-button { white-space: nowrap; }
+  .comparison-number { font-size: 30px; }
+  .tutorial-dialog { padding: 20px; }
+  .tutorial-dialog .dialog-actions .primary { flex: 1 0 100%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-card { animation: reveal-card 400ms ease-out both; }
+  .winning-value .comparison-number { animation: reveal-winning-value 400ms ease-out both; }
+  @keyframes reveal-card { from { opacity: .3; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes reveal-winning-value { from { opacity: .4; } to { opacity: 1; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
